@@ -32,16 +32,40 @@ export default function WorkPage() {
               </div>
             </div>
 
-            {/* Placeholder 1 */}
-            <div className="card">
-              <h3 className="h3">Project</h3>
-              <p className="muted">In development</p>
+            {/* Lucas Seifert Online */}
+            <div className="card panelHighlight">
+              <h3 className="h3">Lucas Seifert Online</h3>
+              <p className="muted" style={{ marginBottom: 16 }}>
+                Personal brand and portfolio site built to establish authority, showcase client work, and convert visitors into leads.
+              </p>
+              <div className="btnRow">
+                <a
+                  className="btnPrimary"
+                  href="https://www.lucasseifert.online"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View live site
+                </a>
+              </div>
             </div>
 
-            {/* Placeholder 2 */}
-            <div className="card">
-              <h3 className="h3">Project</h3>
-              <p className="muted">In development</p>
+            {/* TideGuard */}
+            <div className="card panelHighlight">
+              <h3 className="h3">TideGuard Fiji</h3>
+              <p className="muted" style={{ marginBottom: 16 }}>
+                Educational site on coastal climate risk in Fiji — covering sea-level rise, flooding, erosion, and community resilience.
+              </p>
+              <div className="btnRow">
+                <a
+                  className="btnPrimary"
+                  href="https://www.tideguard.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View live site
+                </a>
+              </div>
             </div>
 
           </div>
