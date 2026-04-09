@@ -63,10 +63,7 @@ export default function ContactPage() {
               Reach out directly and I’ll get back to you within 24 hours.
             </p>
             <div className="btnRow">
-              <a
-                className="btnGhost"
-                href={`mailto:${site.email}?subject=Free%20Website%20Evaluation&body=Hi%20Lucas%2C%0A%0AI%E2%80%99d%20like%20a%20free%20website%20evaluation%20for%20my%20business.%0A%0ABusiness%20name%3A%0AWebsite%20link%3A%0A%0AThanks.`}
-              >
+              <a className="btnGhost" href={site.calendlyUrl} target="_blank" rel="noreferrer">
                 Get a free website evaluation
               </a>
             </div>
