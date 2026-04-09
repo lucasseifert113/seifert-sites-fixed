@@ -1,3 +1,4 @@
+import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 import { site } from "../lib/site";
 
 const prepItems = [
@@ -21,6 +22,12 @@ export default function ContactPage() {
           </p>
         </div>
       </section>
+
+      <FreeEvaluationCTA
+        eyebrow="Free website evaluation"
+        title="Want honest feedback before you spend money?"
+        text="Book a free website evaluation and I’ll tell you what’s weak, what’s costing you trust, and what I’d fix first. No fluff. No obligation."
+      />
 
       <section className="section sectionBorder">
         <div className="container grid2">
@@ -62,11 +69,6 @@ export default function ContactPage() {
             <p className="mutedSmall" style={{ marginTop: 12 }}>
               Reach out directly and I’ll get back to you within 24 hours.
             </p>
-            <div className="btnRow">
-              <a className="btnGhost" href={site.calendlyUrl} target="_blank" rel="noreferrer">
-                Get a free website evaluation
-              </a>
-            </div>
           </div>
         </div>
       </section>

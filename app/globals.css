@@ -263,6 +263,19 @@ a {
   margin: 10px 0 12px;
 }
 
+.freeEvalSection {
+  text-align: center;
+}
+
+.freeEvalText {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.freeEvalActions {
+  justify-content: center;
+}
+
 @media (max-width: 980px) {
   .heroGrid,
   .grid2,

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 
 export default function WorkPage() {
   return (
@@ -71,6 +72,12 @@ export default function WorkPage() {
           </div>
         </div>
       </section>
+
+      <FreeEvaluationCTA
+        eyebrow="Free website evaluation"
+        title="Like the direction? Get a free evaluation of your own site."
+        text="If your current site feels outdated, weak, or unclear, I’ll review it and tell you what I’d fix first."
+      />
     </main>
   );
 }

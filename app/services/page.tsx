@@ -1,4 +1,5 @@
 import Link from "next/link";
+import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 
 const services = [
   {
@@ -75,6 +76,12 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      <FreeEvaluationCTA
+        eyebrow="Free website evaluation"
+        title="Not sure what service you actually need?"
+        text="Start with a free website evaluation. I’ll tell you what’s weak, what matters, and whether you need a redesign, cleanup, or a full rebuild."
+      />
 
       <section className="section sectionBorder">
         <div className="container grid2">

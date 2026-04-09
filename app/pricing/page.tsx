@@ -1,4 +1,5 @@
 import Link from "next/link";
+import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 
 const tiers = [
   {
@@ -146,6 +147,12 @@ export default function PricingPage() {
           ))}
         </div>
       </section>
+
+      <FreeEvaluationCTA
+        eyebrow="Free website evaluation"
+        title="Not ready for a quote yet? Start with a free evaluation."
+        text="If you want honest feedback before spending money, book a free website evaluation and I’ll tell you what your site needs first."
+      />
 
       <section className="section sectionBorder">
         <div className="container">

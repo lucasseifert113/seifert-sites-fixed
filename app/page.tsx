@@ -1,4 +1,5 @@
 import Link from "next/link";
+import FreeEvaluationCTA from "./components/FreeEvaluationCTA";
 import { featuredProject, proofItems, site } from "./lib/site";
 
 const steps = [
@@ -205,6 +206,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <FreeEvaluationCTA
+        eyebrow="Free website evaluation"
+        title="Before you rebuild, get clear on what is actually broken."
+        text="I’ll review your current site and tell you what’s hurting trust, what’s hurting conversions, and what I’d fix first."
+      />
 
       <section className="section sectionBorder">
         <div className="container">
