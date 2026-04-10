@@ -65,6 +65,23 @@ export default function WorkPage() {
               </div>
             </div>
 
+            <div className="card panelHighlight">
+              <h3 className="h3">Andy LeBrun Lacrosse</h3>
+              <p className="muted" style={{ marginBottom: 16 }}>
+                Multi-page website built to improve credibility, sharpen positioning, and make information easier to navigate.
+              </p>
+              <div className="btnRow">
+                <a
+                  className="btnPrimary"
+                  href="https://lebrunlacrosse.online"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View live site
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
