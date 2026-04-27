@@ -13,6 +13,7 @@ export const site = {
   calendlyUrl: "https://calendly.com/lucasseifert113/website-strategy-call",
   email: "seifertsites@gmail.com",
   phone: "443-304-8046",
+  paypal: "https://www.paypal.biz/seifertsites",
   phoneLabel: "Prefer a call?",
   serviceArea: "Serving local businesses and founder-led brands",
   primaryCta: "Book a strategy call",
