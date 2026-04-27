@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import FreeEvaluationCTA from "./components/FreeEvaluationCTA";
 import Testimonials from "./components/Testimonials";
+import Stats from "./components/Stats";
 import JsonLd from "./components/JsonLd";
 import { featuredProject, proofItems, site } from "./lib/site";
 
@@ -266,6 +267,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Stats />
 
       <Testimonials />
 

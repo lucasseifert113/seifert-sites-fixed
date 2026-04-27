@@ -10,6 +10,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/work`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/pricing`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/process`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${base}/blog/5-signs-your-website-is-costing-you-customers`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/blog/why-local-businesses-need-a-real-website`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/blog/what-to-expect-when-you-hire-a-web-designer`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
   ];
 }
