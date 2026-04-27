@@ -25,14 +25,15 @@ export const proofItems = [
 ];
 
 export const featuredProject = {
-  name: "Andy LeBrun Lacrosse",
-  category: "Coach / Personal Brand Website",
+  name: "Rebel Training",
+  category: "Wrestling Gym Website",
   summary:
-    "Personal brand site built to make the brand look more established, easier to trust, and easier to contact.",
+    "Full gym website with programs, scheduling, pricing, coach profiles, and membership app integration. Built to convert visitors into members.",
   bullets: [
-    "Clean multi-page structure",
-    "Sharper offer positioning",
-    "Mobile-friendly layout",
-    "Launched and live",
+    "Complete program and pricing structure",
+    "Coach profiles and credentials",
+    "App integration for bookings",
+    "Mobile-first, fast-loading design",
   ],
+  url: "https://rebeltraining.org",
 };
