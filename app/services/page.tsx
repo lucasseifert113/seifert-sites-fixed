@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
+
+export const metadata: Metadata = {
+  title: "Web Design Services | Landing Pages, Business Sites & Redesigns | Seifert Sites",
+  description:
+    "Landing pages, multi-page business websites, and full redesigns for local businesses. Clean design, fast builds, conversion-focused.",
+  alternates: { canonical: "https://seifertsites.com/services" },
+};
 
 const services = [
   {

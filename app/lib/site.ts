@@ -4,6 +4,12 @@ export const site = {
   description:
     "Seifert Sites designs and builds clean, premium websites for local businesses that need more credibility, better positioning, and more leads.",
   domain: "https://seifertsites.com",
+  location: {
+    city: "Platteville",
+    state: "WI",
+    country: "US",
+    full: "Platteville, WI",
+  },
   calendlyUrl: "https://calendly.com/lucasseifert113/website-strategy-call",
   email: "seifertsites@gmail.com",
   phone: "443-304-8046",
