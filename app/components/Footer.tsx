@@ -35,18 +35,12 @@ export default function Footer() {
           </div>
 
           <div style={{ display: "flex", gap: 14, color: "rgba(255,255,255,0.52)", flexWrap: "wrap" }}>
-            <Link href="/services" style={{ textDecoration: "none" }}>
-              Services
-            </Link>
-            <Link href="/work" style={{ textDecoration: "none" }}>
-              Work
-            </Link>
-            <Link href="/pricing" style={{ textDecoration: "none" }}>
-              Pricing
-            </Link>
-            <Link href="/contact" style={{ textDecoration: "none" }}>
-              Contact
-            </Link>
+            <Link href="/services" style={{ textDecoration: "none" }}>Services</Link>
+            <Link href="/work" style={{ textDecoration: "none" }}>Work</Link>
+            <Link href="/pricing" style={{ textDecoration: "none" }}>Pricing</Link>
+            <Link href="/about" style={{ textDecoration: "none" }}>About</Link>
+            <Link href="/blog" style={{ textDecoration: "none" }}>Blog</Link>
+            <Link href="/contact" style={{ textDecoration: "none" }}>Contact</Link>
           </div>
 
           <div style={{ color: "rgba(255,255,255,0.52)", fontSize: 13, textAlign: "right" }}>
