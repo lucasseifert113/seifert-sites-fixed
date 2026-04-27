@@ -74,6 +74,25 @@ export default function ContactPage() {
                 I will get back to you within 24 hours.
               </p>
             </div>
+
+            <div className="card">
+              <p className="eyebrow">Make a payment</p>
+              <p className="muted" style={{ marginBottom: 4 }}>
+                Already working together? Pay your invoice securely through PayPal.
+              </p>
+              <div className="btnRow">
+                <a
+                  className="btnGhost"
+                  href={site.paypal}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ gap: 8 }}
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 11l5-5 5 5M12 4v14"/></svg>
+                  Pay with PayPal
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
