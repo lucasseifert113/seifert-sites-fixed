@@ -50,7 +50,8 @@ export default function Footer() {
           </div>
 
           <div style={{ color: "rgba(255,255,255,0.52)", fontSize: 13, textAlign: "right" }}>
-            <div>© {new Date().getFullYear()} {site.name}</div>
+            <div>© {new Date().getFullYear()} Seifert Sites LLC</div>
+            <div>Platteville, WI</div>
             <a href={`mailto:${site.email}`} style={{ textDecoration: "none" }}>
               {site.email}
             </a>
