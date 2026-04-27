@@ -1,6 +1,28 @@
 import Link from "next/link";
 import FreeEvaluationCTA from "./components/FreeEvaluationCTA";
+import Testimonials from "./components/Testimonials";
 import { featuredProject, proofItems, site } from "./lib/site";
+
+const projects = [
+  {
+    name: "Rebel Training",
+    desc: "Wrestling gym website with programs, scheduling, pricing, and coach bios. Built to convert visitors into members.",
+    url: "https://rebeltraining.org",
+    tag: "Gym / Athletic Program",
+  },
+  {
+    name: "Andy LeBrun Lacrosse",
+    desc: "Personal brand site built to look more established, easier to trust, and easier to contact.",
+    url: "https://lebrunlacrosse.online",
+    tag: "Coach / Personal Brand",
+  },
+  {
+    name: "TideGuard",
+    desc: "Educational site focused on coastal climate risk and resilience messaging for a mission-driven project.",
+    url: "https://tideguard.org",
+    tag: "Non-Profit / Education",
+  },
+];
 
 const steps = [
   {
@@ -85,7 +107,7 @@ export default function Home() {
 
             <h2 className="h3" style={{ fontSize: 28, marginBottom: 8 }}>
               <a
-                href="https://lebrunlacrosse.online"
+                href={featuredProject.url}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -119,7 +141,7 @@ export default function Home() {
             <div className="btnRow">
               <a
                 className="btnPrimary"
-                href="https://lebrunlacrosse.online"
+                href={featuredProject.url}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -207,10 +229,40 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section sectionBorder">
+        <div className="container">
+          <div style={{ maxWidth: 760, marginBottom: 28 }}>
+            <p className="eyebrow">Recent work</p>
+            <h2 className="h2">Sites I have built for real businesses</h2>
+          </div>
+
+          <div className="grid3">
+            {projects.map((p) => (
+              <div key={p.name} className="card panelHighlight">
+                <span className="badge" style={{ marginBottom: 12 }}>{p.tag}</span>
+                <h3 className="h3">{p.name}</h3>
+                <p className="muted" style={{ marginBottom: 16 }}>{p.desc}</p>
+                <div className="btnRow">
+                  <a className="btnPrimary" href={p.url} target="_blank" rel="noopener noreferrer">
+                    View live site
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ textAlign: "center", marginTop: 24 }}>
+            <Link className="btnGhost" href="/work">See all projects</Link>
+          </div>
+        </div>
+      </section>
+
+      <Testimonials />
+
       <FreeEvaluationCTA
         eyebrow="Free website evaluation"
         title="Before you rebuild, get clear on what is actually broken."
-        text="I’ll review your current site and tell you what’s hurting trust, what’s hurting conversions, and what I’d fix first."
+        text="I'll review your current site and tell you what's hurting trust, what's hurting conversions, and what I'd fix first."
       />
 
       <section className="section sectionBorder">
