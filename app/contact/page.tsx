@@ -1,4 +1,5 @@
 import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
+import ContactForm from "../components/ContactForm";
 import { site } from "../lib/site";
 
 const prepItems = [
@@ -26,49 +27,45 @@ export default function ContactPage() {
       <FreeEvaluationCTA
         eyebrow="Free website evaluation"
         title="Want honest feedback before you spend money?"
-        text="Book a free website evaluation and I’ll tell you what’s weak, what’s costing you trust, and what I’d fix first. No fluff. No obligation."
+        text="Book a free website evaluation and I'll tell you what's weak, what's costing you trust, and what I'd fix first. No fluff. No obligation."
       />
 
       <section className="section sectionBorder">
         <div className="container grid2">
-          <div className="card panelHighlight">
-            <p className="eyebrow">Fastest path</p>
-            <h2 className="h2">Book a strategy call</h2>
-            <p className="muted">
-              Best option if you want direct feedback, a rough scope, and clear next steps.
-            </p>
-            <div className="btnRow">
-              <a className="btnPrimary" href={site.calendlyUrl} target="_blank" rel="noreferrer">
-                {site.primaryCta}
-              </a>
-            </div>
-            <p className="mutedSmall" style={{ marginTop: 14 }}>
-              30-minute intro call. Clear direction. No wasted time.
-            </p>
-          </div>
+          <ContactForm />
 
-          <div className="card">
-            <p className="eyebrow">Prefer email?</p>
-            <h2 className="h2">Send the project details</h2>
-            <p className="muted">
-              Best option if you want to explain the project asynchronously before hopping on a call.
-            </p>
-            <div className="inlineDivider" />
-            <a
-              href={`mailto:${site.email}?subject=Website%20Project%20Inquiry`}
-              style={{
-                display: "inline-flex",
-                textDecoration: "none",
-                fontSize: 18,
-                fontWeight: 700,
-                letterSpacing: -0.3,
-              }}
-            >
-              {site.email}
-            </a>
-            <p className="mutedSmall" style={{ marginTop: 12 }}>
-              Reach out directly and I’ll get back to you within 24 hours.
-            </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+            <div className="card panelHighlight">
+              <p className="eyebrow">Fastest path</p>
+              <h2 className="h2">Book a strategy call</h2>
+              <p className="muted">
+                Best option if you want direct feedback, a rough scope, and clear next steps.
+              </p>
+              <div className="btnRow">
+                <a className="btnPrimary" href={site.calendlyUrl} target="_blank" rel="noreferrer">
+                  {site.primaryCta}
+                </a>
+              </div>
+              <p className="mutedSmall" style={{ marginTop: 14 }}>
+                30-minute intro call. Clear direction. No wasted time.
+              </p>
+            </div>
+
+            <div className="card">
+              <p className="eyebrow">Prefer email?</p>
+              <p className="muted">
+                Reach out directly at{" "}
+                <a
+                  href={`mailto:${site.email}?subject=Website%20Project%20Inquiry`}
+                  style={{ fontWeight: 700, textDecoration: "none" }}
+                >
+                  {site.email}
+                </a>
+              </p>
+              <p className="mutedSmall" style={{ marginTop: 8 }}>
+                I will get back to you within 24 hours.
+              </p>
+            </div>
           </div>
         </div>
       </section>
