@@ -6,14 +6,17 @@ export const site = {
   domain: "https://seifertsites.com",
   calendlyUrl: "https://calendly.com/lucasseifert113/website-strategy-call",
   email: "seifertsites@gmail.com",
-  phoneLabel: "Prefer email?",
+  phone: "443-304-8046",
+  phoneLabel: "Prefer a call?",
   serviceArea: "Serving local businesses and founder-led brands",
   primaryCta: "Book a strategy call",
   secondaryCta: "See the work",
   pricing: {
-    starter: "$1,200+",
-    growth: "$2,400+",
-    premium: "$4,000+",
+    starter: "$250–$850",
+    growth: "$850–$1,250",
+    premium: "$1,275+",
+    perPage: "$200/page",
+    monthly: "$50/mo",
   },
 };
 

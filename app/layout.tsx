@@ -33,7 +33,7 @@ export default function RootLayout({
       <body>
         <Background />
         <Nav />
-        <main className="site">{children}</main>
+        <div className="site">{children}</div>
         <Footer />
       </body>
     </html>

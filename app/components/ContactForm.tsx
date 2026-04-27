@@ -83,13 +83,50 @@ export default function ContactForm() {
         </div>
       </div>
 
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+          <label htmlFor="phone" style={{ fontSize: 13, color: "rgba(255,255,255,0.5)" }}>Phone (optional)</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="(555) 123-4567"
+            style={{
+              padding: "10px 14px",
+              borderRadius: 8,
+              border: "1px solid rgba(255,255,255,0.12)",
+              background: "rgba(0,0,0,0.3)",
+              color: "#fff",
+              fontSize: 15,
+            }}
+          />
+        </div>
+        <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+          <label htmlFor="website" style={{ fontSize: 13, color: "rgba(255,255,255,0.5)" }}>Current website URL (if any)</label>
+          <input
+            type="url"
+            id="website"
+            name="website"
+            placeholder="https://yourbusiness.com"
+            style={{
+              padding: "10px 14px",
+              borderRadius: 8,
+              border: "1px solid rgba(255,255,255,0.12)",
+              background: "rgba(0,0,0,0.3)",
+              color: "#fff",
+              fontSize: 15,
+            }}
+          />
+        </div>
+      </div>
+
       <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-        <label htmlFor="website" style={{ fontSize: 13, color: "rgba(255,255,255,0.5)" }}>Current website URL (if any)</label>
+        <label htmlFor="business" style={{ fontSize: 13, color: "rgba(255,255,255,0.5)" }}>Business name</label>
         <input
-          type="url"
-          id="website"
-          name="website"
-          placeholder="https://yourbusiness.com"
+          type="text"
+          id="business"
+          name="business"
+          placeholder="Your business name"
           style={{
             padding: "10px 14px",
             borderRadius: 8,

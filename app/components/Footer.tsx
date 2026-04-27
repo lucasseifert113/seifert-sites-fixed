@@ -55,6 +55,11 @@ export default function Footer() {
             <a href={`mailto:${site.email}`} style={{ textDecoration: "none" }}>
               {site.email}
             </a>
+            <div>
+              <a href={`tel:${site.phone}`} style={{ textDecoration: "none" }}>
+                {site.phone}
+              </a>
+            </div>
           </div>
         </div>
       </div>
