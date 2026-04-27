@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
+
+export const metadata: Metadata = {
+  title: "Our Work | Websites Built for Real Businesses | Seifert Sites",
+  description:
+    "See websites Seifert Sites has built for local businesses, coaches, and brands. Real projects, real results.",
+  alternates: { canonical: "https://seifertsites.com/work" },
+};
 
 export default function WorkPage() {
   return (

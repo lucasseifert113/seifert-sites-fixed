@@ -1,7 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import FreeEvaluationCTA from "./components/FreeEvaluationCTA";
 import Testimonials from "./components/Testimonials";
+import JsonLd from "./components/JsonLd";
 import { featuredProject, proofItems, site } from "./lib/site";
+
+export const metadata: Metadata = {
+  title: "Seifert Sites | Premium Web Design for Local Businesses in Platteville, WI",
+  description:
+    "Seifert Sites builds clean, modern websites for local businesses that need more credibility, better positioning, and more leads. Based in Platteville, WI.",
+  alternates: { canonical: site.domain },
+};
 
 const projects = [
   {
@@ -48,6 +57,7 @@ const fit = [
 export default function Home() {
   return (
     <main>
+      <JsonLd />
       <section className="hero">
         <div className="container heroGrid">
           <div>

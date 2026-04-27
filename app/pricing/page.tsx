@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
+import PricingJsonLd from "../components/PricingJsonLd";
+
+export const metadata: Metadata = {
+  title: "Web Design Pricing | Starting at $250/page | Seifert Sites",
+  description:
+    "Simple web design pricing starting at $250 per page. Starter, Growth, and Premium packages for local businesses. $50/month for ongoing updates.",
+  alternates: { canonical: "https://seifertsites.com/pricing" },
+};
 
 const tiers = [
   {
@@ -58,6 +67,7 @@ const tiers = [
 export default function PricingPage() {
   return (
     <main>
+      <PricingJsonLd />
       <section className="hero">
         <div className="container">
           <p className="eyebrow">Pricing · Seifert Sites</p>

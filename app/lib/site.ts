@@ -4,16 +4,25 @@ export const site = {
   description:
     "Seifert Sites designs and builds clean, premium websites for local businesses that need more credibility, better positioning, and more leads.",
   domain: "https://seifertsites.com",
+  location: {
+    city: "Platteville",
+    state: "WI",
+    country: "US",
+    full: "Platteville, WI",
+  },
   calendlyUrl: "https://calendly.com/lucasseifert113/website-strategy-call",
   email: "seifertsites@gmail.com",
-  phoneLabel: "Prefer email?",
+  phone: "443-304-8046",
+  phoneLabel: "Prefer a call?",
   serviceArea: "Serving local businesses and founder-led brands",
   primaryCta: "Book a strategy call",
   secondaryCta: "See the work",
   pricing: {
-    starter: "$1,200+",
-    growth: "$2,400+",
-    premium: "$4,000+",
+    starter: "$250–$850",
+    growth: "$850–$1,250",
+    premium: "$1,275+",
+    perPage: "$200/page",
+    monthly: "$50/mo",
   },
 };
 
