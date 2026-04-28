@@ -36,6 +36,33 @@ const posts = [
     tag: "Process",
     readTime: "4 min read",
   },
+  {
+    slug: "how-much-does-a-website-cost",
+    title: "How much does a website cost for a small business?",
+    excerpt:
+      "DIY builders, freelancers, and agencies compared. A straight breakdown of what you actually get at each price point and what questions to ask before you spend anything.",
+    date: "April 2026",
+    tag: "Pricing",
+    readTime: "5 min read",
+  },
+  {
+    slug: "wix-vs-custom-website",
+    title: "Wix vs a custom website: which is better for your business?",
+    excerpt:
+      "An honest comparison. When a builder is fine, when it starts to hurt you, and what you actually give up by staying on a template platform.",
+    date: "April 2026",
+    tag: "Web Design",
+    readTime: "5 min read",
+  },
+  {
+    slug: "local-seo-basics-small-business",
+    title: "Local SEO basics every small business should know",
+    excerpt:
+      "Google Business Profile, local keywords, schema markup, and reviews. The things that actually move the needle for local search without needing to become an SEO expert.",
+    date: "April 2026",
+    tag: "Local SEO",
+    readTime: "6 min read",
+  },
 ];
 
 export default function BlogPage() {

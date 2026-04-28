@@ -22,7 +22,7 @@ export const site = {
     starter: "$250–$850",
     growth: "$850–$1,250",
     premium: "$1,275+",
-    perPage: "$200/page",
+    perPage: "$175–$250/page",
     monthly: "$50/mo",
   },
 };

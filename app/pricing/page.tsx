@@ -139,7 +139,7 @@ export default function PricingPage() {
           {[
             {
               title: "How does pricing work?",
-              text: "Development is $200 per page. The total build cost depends on how many pages your site needs.",
+              text: "Development ranges from $175 to $250 per page depending on the plan. Starter is $250/page, Growth is $200/page, and Premium is $175/page.",
             },
             {
               title: "What does the $50/month include?",

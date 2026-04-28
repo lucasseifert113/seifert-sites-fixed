@@ -207,6 +207,12 @@ export default function Home() {
           <div style={{ maxWidth: 760, marginBottom: 28 }}>
             <p className="eyebrow">Best fit</p>
             <h2 className="h2">Who this is for</h2>
+            <p className="muted" style={{ marginTop: 12 }}>
+              Based in Platteville, WI and serving businesses across{" "}
+              <Link href="/web-design-wisconsin" style={{ color: "var(--orange2)", textDecoration: "none" }}>Wisconsin</Link>,{" "}
+              <Link href="/web-design-iowa" style={{ color: "var(--orange2)", textDecoration: "none" }}>Iowa</Link>, and{" "}
+              <Link href="/web-design-illinois" style={{ color: "var(--orange2)", textDecoration: "none" }}>Illinois</Link>.
+            </p>
           </div>
 
           <div className="gridAuto">
