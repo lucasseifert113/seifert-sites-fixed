@@ -28,8 +28,11 @@ export default function WorkPage() {
                 Wrestling gym website built to make the brand feel sharper, more legitimate, and easier to trust while clearly organizing programs, pricing, and calls to action.
               </p>
               <div className="btnRow">
+                <Link className="btnPrimary" href="/work/rebel-training">
+                  Read case study
+                </Link>
                 <a
-                  className="btnPrimary"
+                  className="btnGhost"
                   href="https://rebeltraining.org"
                   target="_blank"
                   rel="noopener noreferrer"

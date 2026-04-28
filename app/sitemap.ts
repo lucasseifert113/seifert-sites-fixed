@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/web-design-wisconsin`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/web-design-iowa`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/web-design-illinois`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/work/rebel-training`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
   ];
 }
