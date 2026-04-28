@@ -4,9 +4,9 @@ import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 import PricingJsonLd from "../components/PricingJsonLd";
 
 export const metadata: Metadata = {
-  title: "Web Design Pricing | Starting at $250/page | Seifert Sites",
+  title: "Pricing | Web Design, Marketing & SEO | Seifert Sites",
   description:
-    "Simple web design pricing starting at $250 per page. Starter, Growth, and Premium packages for local businesses. $50/month for ongoing updates.",
+    "Web design starting at $250/page. Local SEO, Google Ads, social media, brand identity, and website audits. Clear pricing for local businesses.",
   alternates: { canonical: "https://seifertsites.com/pricing" },
 };
 
@@ -135,6 +135,35 @@ export default function PricingPage() {
       </section>
 
       <section className="section sectionBorder">
+        <div className="container">
+          <div style={{ maxWidth: 760, marginBottom: 28 }}>
+            <p className="eyebrow">Additional Services</p>
+            <h2 className="h2">Marketing, branding, and optimization</h2>
+            <p className="muted">Standalone services you can add to any web design package or purchase on their own.</p>
+          </div>
+          <div className="grid3">
+            {[
+              { title: "Google Business Profile", price: "$200", note: "One-time setup", text: "Full profile optimization, photos, categories, review strategy, and post scheduling." },
+              { title: "Website Audit", price: "$200", note: "One-time", text: "Detailed report covering performance, SEO, UX, and conversion issues with a clear action plan." },
+              { title: "Logo & Brand Identity", price: "$400 to $600", note: "One-time", text: "Logo design, color palette, typography, and a brand guidelines document." },
+              { title: "Local SEO", price: "$300/mo", note: "Monthly", text: "On-page optimization, Google Maps ranking, citation building, and local keyword targeting." },
+              { title: "Google & Meta Ads", price: "$400/mo", note: "+ ad spend", text: "Campaign setup, audience targeting, ad creative, and performance tracking." },
+              { title: "Social Media Management", price: "$500/mo", note: "Monthly", text: "Content calendars, regular posting, community engagement, and brand consistency." },
+              { title: "Email Marketing", price: "$300 setup", note: "+ $100/mo management", text: "Newsletter setup, automation sequences, list building, and campaign analytics." },
+              { title: "Monthly Maintenance", price: "$50/mo", note: "Monthly", text: "Hosting, backups, security updates, small content edits, and uptime monitoring." },
+            ].map((service) => (
+              <div key={service.title} className="card cardSoft">
+                <h3 className="h3" style={{ fontSize: 22 }}>{service.title}</h3>
+                <div className="price" style={{ fontSize: 24 }}>{service.price}</div>
+                <p className="mutedSmall" style={{ marginTop: 4, marginBottom: 12 }}>{service.note}</p>
+                <p className="muted">{service.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section sectionBorder">
         <div className="container grid3">
           {[
             {
@@ -148,6 +177,14 @@ export default function PricingPage() {
             {
               title: "How fast can you deliver?",
               text: "Fast if content and approvals move. Most delays happen because the inputs are slow, not the build.",
+            },
+            {
+              title: "Can I bundle services?",
+              text: "Yes. If you need a website plus SEO or ads, I will scope the full package and give you one clear price.",
+            },
+            {
+              title: "Do I need a website first?",
+              text: "Not always. Google Business Profile, audits, and brand identity work as standalone services. But a good website makes everything else work harder.",
             },
           ].map((item) => (
             <div key={item.title} className="card cardSoft">
