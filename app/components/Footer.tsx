@@ -34,13 +34,24 @@ export default function Footer() {
             </div>
           </div>
 
-          <div style={{ display: "flex", gap: 14, color: "rgba(255,255,255,0.52)", flexWrap: "wrap" }}>
-            <Link href="/services" style={{ textDecoration: "none" }}>Services</Link>
-            <Link href="/work" style={{ textDecoration: "none" }}>Work</Link>
-            <Link href="/pricing" style={{ textDecoration: "none" }}>Pricing</Link>
-            <Link href="/about" style={{ textDecoration: "none" }}>About</Link>
-            <Link href="/blog" style={{ textDecoration: "none" }}>Blog</Link>
-            <Link href="/contact" style={{ textDecoration: "none" }}>Contact</Link>
+          <div style={{ display: "flex", gap: 28, flexWrap: "wrap" }}>
+            <div style={{ display: "flex", gap: 14, color: "rgba(255,255,255,0.52)", flexWrap: "wrap" }}>
+              <Link href="/services" style={{ textDecoration: "none" }}>Services</Link>
+              <Link href="/work" style={{ textDecoration: "none" }}>Work</Link>
+              <Link href="/pricing" style={{ textDecoration: "none" }}>Pricing</Link>
+              <Link href="/about" style={{ textDecoration: "none" }}>About</Link>
+              <Link href="/blog" style={{ textDecoration: "none" }}>Blog</Link>
+              <Link href="/contact" style={{ textDecoration: "none" }}>Contact</Link>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+              <span style={{ color: "rgba(255,255,255,0.3)", fontSize: 11, letterSpacing: "0.8px", textTransform: "uppercase" }}>Service Areas</span>
+              <div style={{ display: "flex", gap: 10, color: "rgba(255,255,255,0.52)", flexWrap: "wrap" }}>
+                <Link href="/web-design-platteville-wi" style={{ textDecoration: "none", fontSize: 13 }}>Platteville, WI</Link>
+                <Link href="/web-design-wisconsin" style={{ textDecoration: "none", fontSize: 13 }}>Wisconsin</Link>
+                <Link href="/web-design-iowa" style={{ textDecoration: "none", fontSize: 13 }}>Iowa</Link>
+                <Link href="/web-design-illinois" style={{ textDecoration: "none", fontSize: 13 }}>Illinois</Link>
+              </div>
+            </div>
           </div>
 
           <div style={{ color: "rgba(255,255,255,0.52)", fontSize: 13, textAlign: "right" }}>

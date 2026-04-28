@@ -48,6 +48,34 @@ export default function Post() {
                 <Link className="btnPrimary" href="/contact">Get a free website evaluation</Link>
                 <Link className="btnGhost" href="/blog">Back to blog</Link>
               </div>
+
+              <div className="inlineDivider" style={{ margin: "40px 0" }} />
+
+              <h2 className="h2">Related posts</h2>
+              <div style={{ display: "grid", gap: 12 }}>
+                <Link
+                  href="/blog/local-seo-basics-small-business"
+                  style={{ textDecoration: "none" }}
+                >
+                  <div className="card cardSoft">
+                    <h3 className="h3" style={{ marginBottom: 6 }}>
+                      Local SEO basics every small business should know
+                    </h3>
+                    <p className="mutedSmall">Google Business Profile, local keywords, and reviews explained without the jargon.</p>
+                  </div>
+                </Link>
+                <Link
+                  href="/blog/how-much-does-a-website-cost"
+                  style={{ textDecoration: "none" }}
+                >
+                  <div className="card cardSoft">
+                    <h3 className="h3" style={{ marginBottom: 6 }}>
+                      How much does a website cost for a small business?
+                    </h3>
+                    <p className="mutedSmall">A breakdown of DIY builders, freelancers, and agencies so you know what you are paying for.</p>
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
         </section>

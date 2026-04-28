@@ -127,6 +127,34 @@ export default function Post() {
                   Back to blog
                 </Link>
               </div>
+
+              <div className="inlineDivider" style={{ margin: "40px 0" }} />
+
+              <h2 className="h2">Related posts</h2>
+              <div style={{ display: "grid", gap: 12 }}>
+                <Link
+                  href="/blog/wix-vs-custom-website"
+                  style={{ textDecoration: "none" }}
+                >
+                  <div className="card cardSoft">
+                    <h3 className="h3" style={{ marginBottom: 6 }}>
+                      Wix vs a custom website: which is better for your business?
+                    </h3>
+                    <p className="mutedSmall">An honest look at when a builder works and when it starts to hurt you.</p>
+                  </div>
+                </Link>
+                <Link
+                  href="/blog/local-seo-basics-small-business"
+                  style={{ textDecoration: "none" }}
+                >
+                  <div className="card cardSoft">
+                    <h3 className="h3" style={{ marginBottom: 6 }}>
+                      Local SEO basics every small business should know
+                    </h3>
+                    <p className="mutedSmall">Google Business Profile, local keywords, and reviews. What actually moves the needle.</p>
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
         </section>

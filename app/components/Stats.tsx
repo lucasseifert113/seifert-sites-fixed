@@ -10,11 +10,18 @@ const stats = [
 ];
 
 function AnimatedNumber({ target, suffix }: { target: number; suffix: string }) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(target); // SSR renders real number
   const ref = useRef<HTMLSpanElement>(null);
   const started = useRef(false);
+  const hydrated = useRef(false);
 
   useEffect(() => {
+    // After hydration, reset to 0 for animation
+    if (!hydrated.current) {
+      hydrated.current = true;
+      setCount(0);
+    }
+
     const el = ref.current;
     if (!el) return;
 
