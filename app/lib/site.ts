@@ -11,7 +11,7 @@ export const site = {
     full: "Platteville, WI",
   },
   calendlyUrl: "https://calendly.com/lucasseifert113/website-strategy-call",
-  email: "seifertsites@gmail.com",
+  email: "lucas@seifertsites.com",
   phone: "443-304-8046",
   paypal: "https://www.paypal.biz/seifertsites",
   phoneLabel: "Prefer a call?",

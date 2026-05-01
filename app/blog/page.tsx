@@ -10,6 +10,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "google-business-profile-guide",
+    title: "Why your Google Business Profile matters more than your website",
+    excerpt:
+      "Most customers find you on Google before they see your website. Here is what to optimize in your profile and why it matters more than you think.",
+    date: "April 2026",
+    tag: "Local SEO",
+    readTime: "6 min read",
+  },
+  {
     slug: "5-signs-your-website-is-costing-you-customers",
     title: "5 signs your website is costing you customers",
     excerpt:
