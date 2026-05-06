@@ -13,7 +13,8 @@ export default function ContactForm() {
     const data = new FormData(form);
 
     try {
-      const res = await fetch("https://formspree.io/f/xgorbggv", {
+      data.append("access_key", "415fcd94-5170-4925-a1e6-8e0ffe797de9");
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         body: data,
         headers: { Accept: "application/json" },
@@ -168,7 +169,7 @@ export default function ContactForm() {
       </button>
 
       {status === "error" && (
-        <p style={{ color: "#ef4444", fontSize: 14 }}>Something went wrong. Try emailing seifertsites@gmail.com directly.</p>
+        <p style={{ color: "#ef4444", fontSize: 14 }}>Something went wrong. Try emailing lucas@seifertsites.com directly.</p>
       )}
     </form>
   );
