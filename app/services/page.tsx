@@ -85,6 +85,26 @@ const serviceCategories = [
       },
     ],
   },
+  {
+    category: "Marketing Retainers",
+    services: [
+      {
+        title: "Social Media Management",
+        text: "Regular posting and community engagement that keeps your brand visible and builds trust with your audience.",
+        bullets: ["3 posts/week (Instagram + Facebook)", "Caption writing in your brand voice", "Hashtag research", "Monthly performance report"],
+      },
+      {
+        title: "Local SEO + Google Business Profile",
+        text: "Complete optimization so you rank higher in Google search and Maps for customers in your area.",
+        bullets: ["Google Business Profile optimization", "Local citation building", "Keyword targeting for your city", "Monthly ranking report"],
+      },
+      {
+        title: "Full Marketing Retainer",
+        text: "Everything you need to stay visible online. Social media, SEO, email, strategy calls, and priority support.",
+        bullets: ["Everything in Social + SEO packages", "Email newsletter (1x/month)", "Monthly strategy call", "Priority support"],
+      },
+    ],
+  },
 ];
 
 export default function ServicesPage() {
@@ -97,8 +117,8 @@ export default function ServicesPage() {
             Build, market, and <span className="accent">grow your business online</span>.
           </h1>
           <p className="lead">
-            I work with local businesses on web design, digital marketing, and brand optimization.
-            Everything is built to make you look more credible and help you convert more customers.
+            I work with local businesses on web design, digital marketing, and ongoing marketing retainers.
+            Everything is built to help you get found, look credible, and convert more customers.
           </p>
         </div>
       </section>

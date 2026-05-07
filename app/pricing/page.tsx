@@ -146,10 +146,10 @@ export default function PricingPage() {
               { title: "Google Business Profile", price: "$200", note: "One-time setup", text: "Full profile optimization, photos, categories, review strategy, and post scheduling." },
               { title: "Website Audit", price: "$200", note: "One-time", text: "Detailed report covering performance, SEO, UX, and conversion issues with a clear action plan." },
               { title: "Logo & Brand Identity", price: "$400 to $600", note: "One-time", text: "Logo design, color palette, typography, and a brand guidelines document." },
-              { title: "Local SEO", price: "$300/mo", note: "Monthly", text: "On-page optimization, Google Maps ranking, citation building, and local keyword targeting." },
+              { title: "Local SEO + Google Business Profile", price: "$175/mo", note: "Monthly retainer", text: "Google Business Profile optimization, local citation building, keyword targeting for your city, and monthly ranking report." },
               { title: "Google & Meta Ads", price: "$400/mo", note: "+ ad spend", text: "Campaign setup, audience targeting, ad creative, and performance tracking." },
-              { title: "Social Media Management", price: "$500/mo", note: "Monthly", text: "Content calendars, regular posting, community engagement, and brand consistency." },
-              { title: "Email Marketing", price: "$300 setup", note: "+ $100/mo management", text: "Newsletter setup, automation sequences, list building, and campaign analytics." },
+              { title: "Social Media Management", price: "$250/mo", note: "Monthly retainer", text: "3 posts/week on Instagram and Facebook, caption writing in your brand voice, hashtag research, and monthly performance report." },
+              { title: "Full Marketing Retainer", price: "$500/mo", note: "Best value", text: "Social media management plus local SEO, monthly email newsletter, strategy call, and priority support. Everything in one package." },
               { title: "Monthly Maintenance", price: "$50/mo", note: "Monthly", text: "Hosting, backups, security updates, small content edits, and uptime monitoring." },
             ].map((service) => (
               <div key={service.title} className="card cardSoft">
