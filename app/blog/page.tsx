@@ -10,6 +10,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "how-to-market-your-small-business-online",
+    title: "How to market your small business online (without a big budget)",
+    excerpt:
+      "Getting your business out there doesn't require expensive ads. Here are the practical marketing moves that actually work for local businesses.",
+    date: "May 2026",
+    tag: "Marketing",
+    readTime: "7 min read",
+  },
+  {
     slug: "google-business-profile-guide",
     title: "Why your Google Business Profile matters more than your website",
     excerpt:
