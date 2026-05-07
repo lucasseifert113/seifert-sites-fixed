@@ -26,6 +26,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Lucas Seifert", url: site.domain }],
   creator: "Lucas Seifert",
+  verification: {
+    google: "RUXAIAQPQTRz2DQxnw_dUtJm1A36A3sIAhy2kp5x9xs",
+  },
   openGraph: {
     title: site.title,
     description: site.description,
