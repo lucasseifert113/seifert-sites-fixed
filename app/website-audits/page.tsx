@@ -117,7 +117,7 @@ export default function WebsiteAuditsPage() {
         <div className="container">
           <div style={{ maxWidth: 760, marginBottom: 28 }}>
             <p className="eyebrow">Pricing</p>
-            <h2 className="h2">$200 one-time</h2>
+            <h2 className="h2">Free</h2>
             <p className="lead">Comprehensive audit report with specific action plan.</p>
           </div>
           <div className="grid2">
@@ -183,7 +183,7 @@ export default function WebsiteAuditsPage() {
         <div className="container grid2">
           <div className="card">
             <h2 className="h2">Most websites leave money on the table</h2>
-            <p className="muted">A good website audit finds the problems that are costing you customers. Small fixes often deliver big results. For $200, knowing what matters first is a bargain.</p>
+            <p className="muted">A good website audit finds the problems that are costing you customers. Small fixes often deliver big results. Knowing what matters first is a bargain.</p>
           </div>
 
           <div className="card panelHighlight">

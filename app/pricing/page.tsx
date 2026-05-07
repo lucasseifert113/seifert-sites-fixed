@@ -144,7 +144,7 @@ export default function PricingPage() {
           <div className="grid3">
             {[
               { title: "Google Business Profile", price: "$200", note: "One-time setup", text: "Full profile optimization, photos, categories, review strategy, and post scheduling." },
-              { title: "Website Audit", price: "$200", note: "One-time", text: "Detailed report covering performance, SEO, UX, and conversion issues with a clear action plan." },
+              { title: "Website Audit", price: "Free", note: "No strings attached", text: "Detailed report covering performance, SEO, UX, and conversion issues with a clear action plan." },
               { title: "Logo & Brand Identity", price: "$400 to $600", note: "One-time", text: "Logo design, color palette, typography, and a brand guidelines document." },
               { title: "Local SEO + Google Business Profile", price: "$175/mo", note: "Monthly retainer", text: "Google Business Profile optimization, local citation building, keyword targeting for your city, and monthly ranking report." },
               { title: "Google & Meta Ads", price: "$400/mo", note: "+ ad spend", text: "Campaign setup, audience targeting, ad creative, and performance tracking." },
