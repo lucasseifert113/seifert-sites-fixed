@@ -5,6 +5,7 @@ import Testimonials from "./components/Testimonials";
 import Stats from "./components/Stats";
 import JsonLd from "./components/JsonLd";
 import { featuredProject, proofItems, site } from "./lib/site";
+import { recentProjects } from "./lib/recent-projects";
 
 export const metadata: Metadata = {
   title: "Seifert Sites | Premium Web Design for Local Businesses in Platteville, WI",
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 };
 
 const projects = [
+  ...recentProjects,
   {
     name: "Rebel Training",
     desc: "Wrestling gym website with programs, scheduling, pricing, and coach bios. Built to convert visitors into members.",
@@ -254,7 +256,7 @@ export default function Home() {
           </div>
 
           <div className="grid3">
-            {projects.map((p) => (
+            {projects.slice(0, 3).map((p) => (
               <div key={p.name} className="card panelHighlight">
                 <span className="badge" style={{ marginBottom: 12 }}>{p.tag}</span>
                 <h3 className="h3">{p.name}</h3>

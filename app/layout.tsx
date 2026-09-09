@@ -66,7 +66,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {},
 };
 
 export default function RootLayout({

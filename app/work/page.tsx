@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
+import { recentProjects } from "../lib/recent-projects";
 
 export const metadata: Metadata = {
   title: "Our Work | Websites Built for Real Businesses | Seifert Sites",
@@ -21,6 +22,18 @@ export default function WorkPage() {
           </div>
 
           <div className="gridAuto">
+            {recentProjects.map((project) => (
+              <div key={project.url} className="card panelHighlight">
+                <span className="badge" style={{ marginBottom: 12 }}>{project.tag}</span>
+                <h3 className="h3">{project.name}</h3>
+                <p className="muted" style={{ marginBottom: 16 }}>{project.desc}</p>
+                <div className="btnRow">
+                  <a className="btnPrimary" href={project.url} target="_blank" rel="noopener noreferrer">
+                    View live site
+                  </a>
+                </div>
+              </div>
+            ))}
 
             <div className="card panelHighlight">
               <h3 className="h3">Rebel Training</h3>
