@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/process`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${base}/blog/platteville-web-design-tay-blendz-averon`, lastModified: "2026-09-09", changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/blog/google-business-profile-guide`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/blog/5-signs-your-website-is-costing-you-customers`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/blog/why-local-businesses-need-a-real-website`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },

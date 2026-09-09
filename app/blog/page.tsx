@@ -10,6 +10,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "platteville-web-design-tay-blendz-averon",
+    title: "Platteville web design: Tay Blendz and Averon Sports Group",
+    excerpt: "Explore two recent Seifert Sites projects: a local barber website and a sports recruiting and representation brand.",
+    date: "September 2026",
+    tag: "Recent projects",
+    readTime: "3 min read",
+  },
+  {
     slug: "how-to-market-your-small-business-online",
     title: "How to market your small business online (without a big budget)",
     excerpt:
