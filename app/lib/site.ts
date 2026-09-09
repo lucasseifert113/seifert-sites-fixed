@@ -3,7 +3,7 @@ export const site = {
   title: "Seifert Sites | Premium websites for local businesses",
   description:
     "Seifert Sites designs and builds clean, premium websites for local businesses that need more credibility, better positioning, and more leads.",
-  domain: "https://seifertsites.com",
+  domain: "https://www.seifertsites.com",
   location: {
     city: "Platteville",
     state: "WI",

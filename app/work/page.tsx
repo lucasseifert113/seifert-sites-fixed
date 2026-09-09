@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Our Work | Websites Built for Real Businesses | Seifert Sites",
   description:
     "See websites Seifert Sites has built for local businesses, coaches, and brands. Real projects, real results.",
-  alternates: { canonical: "https://seifertsites.com/work" },
+  alternates: { canonical: "https://www.seifertsites.com/work" },
 };
 
 export default function WorkPage() {

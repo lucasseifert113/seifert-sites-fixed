@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Blog | Web Design Tips for Local Businesses",
   description:
     "Practical web design advice for local business owners. Learn what makes a website convert, when to redesign, and how to stop losing customers to a bad site.",
-  alternates: { canonical: "https://seifertsites.com/blog" },
+  alternates: { canonical: "https://www.seifertsites.com/blog" },
 };
 
 const posts = [

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Most customers find you on Google before they ever see your website. Here is what to optimize in your Google Business Profile and why it matters more than you think.",
   alternates: {
     canonical:
-      "https://seifertsites.com/blog/google-business-profile-guide",
+      "https://www.seifertsites.com/blog/google-business-profile-guide",
   },
 };
 

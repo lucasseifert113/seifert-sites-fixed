@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "The web design process does not have to be painful. Here is what a good project looks like from discovery to launch.",
   alternates: {
-    canonical: "https://seifertsites.com/blog/what-to-expect-when-you-hire-a-web-designer",
+    canonical: "https://www.seifertsites.com/blog/what-to-expect-when-you-hire-a-web-designer",
   },
 };
 

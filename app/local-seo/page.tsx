@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Local SEO Services | Get Found on Google Maps | Seifert Sites",
   description:
     "Local SEO services for Wisconsin businesses. Google Maps ranking, citation building, and on-page optimization to help customers find you locally.",
-  alternates: { canonical: "https://seifertsites.com/local-seo" },
+  alternates: { canonical: "https://www.seifertsites.com/local-seo" },
 };
 
 export default function LocalSEOPage() {

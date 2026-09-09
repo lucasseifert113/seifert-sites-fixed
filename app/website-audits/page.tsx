@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Website Audit | Find What's Hurting Your Business Online | Seifert Sites",
   description:
     "Website audits for small businesses. Performance, SEO, UX, and conversion analysis with a clear action plan to improve your site.",
-  alternates: { canonical: "https://seifertsites.com/website-audits" },
+  alternates: { canonical: "https://www.seifertsites.com/website-audits" },
 };
 
 export default function WebsiteAuditsPage() {

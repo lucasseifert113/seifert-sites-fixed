@@ -4,7 +4,7 @@ import FreeEvaluationCTA from "../../components/FreeEvaluationCTA";
 
 const title = "Platteville Web Design: Tay Blendz & Averon Sports Group";
 const description = "See two recent Seifert Sites projects: a Platteville barber website for Tay Blendz and a recruiting and representation website for Averon Sports Group.";
-const url = "https://seifertsites.com/blog/platteville-web-design-tay-blendz-averon";
+const url = "https://www.seifertsites.com/blog/platteville-web-design-tay-blendz-averon";
 
 export const metadata: Metadata = {
   title,
@@ -29,8 +29,8 @@ export default function Post() {
         datePublished: "2026-09-09T12:00:00-05:00",
         dateModified: "2026-09-09T12:00:00-05:00",
         mainEntityOfPage: url,
-        author: { "@type": "Person", name: "Lucas Seifert", url: "https://seifertsites.com/about" },
-        publisher: { "@type": "Organization", name: "Seifert Sites", url: "https://seifertsites.com" },
+        author: { "@type": "Person", name: "Lucas Seifert", url: "https://www.seifertsites.com/about" },
+        publisher: { "@type": "Organization", name: "Seifert Sites", url: "https://www.seifertsites.com" },
       }) }} />
       <article>
         <section className="hero">

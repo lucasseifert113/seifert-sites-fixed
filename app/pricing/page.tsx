@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Pricing | Web Design, Marketing & SEO | Seifert Sites",
   description:
     "Web design starting at $250/page. Local SEO, Google Ads, social media, brand identity, and website audits. Clear pricing for local businesses.",
-  alternates: { canonical: "https://seifertsites.com/pricing" },
+  alternates: { canonical: "https://www.seifertsites.com/pricing" },
 };
 
 const tiers = [

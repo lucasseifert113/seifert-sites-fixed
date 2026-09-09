@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Rebel Training Case Study | Wrestling Gym Website | Seifert Sites",
   description:
     "How Seifert Sites built a complete website for Rebel Training, a wrestling and strength gym. Programs, pricing, coach profiles, scheduling, and membership integration.",
-  alternates: { canonical: "https://seifertsites.com/work/rebel-training" },
+  alternates: { canonical: "https://www.seifertsites.com/work/rebel-training" },
 };
 
 const stats = [

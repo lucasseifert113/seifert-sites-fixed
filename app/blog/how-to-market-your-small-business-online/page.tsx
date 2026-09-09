@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Practical marketing strategies for small businesses. Learn how to get found on Google, build your online presence, and attract more customers without spending a fortune.",
   alternates: {
     canonical:
-      "https://seifertsites.com/blog/how-to-market-your-small-business-online",
+      "https://www.seifertsites.com/blog/how-to-market-your-small-business-online",
   },
 };
 

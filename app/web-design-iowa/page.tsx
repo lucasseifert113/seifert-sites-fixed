@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Iowa Web Design for Small Businesses | Seifert Sites",
   description:
     "Professional web design for Iowa small businesses. Seifert Sites builds clean, modern websites for businesses in Dubuque, Decorah, and eastern Iowa.",
-  alternates: { canonical: "https://seifertsites.com/web-design-iowa" },
+  alternates: { canonical: "https://www.seifertsites.com/web-design-iowa" },
 };
 
 const towns = [

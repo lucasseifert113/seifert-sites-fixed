@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Illinois Web Design for Small Businesses | Seifert Sites",
   description:
     "Professional web design for Illinois small businesses. Seifert Sites builds clean, modern websites for businesses in Galena, Freeport, Dixon, and northern Illinois.",
-  alternates: { canonical: "https://seifertsites.com/web-design-illinois" },
+  alternates: { canonical: "https://www.seifertsites.com/web-design-illinois" },
 };
 
 const towns = [

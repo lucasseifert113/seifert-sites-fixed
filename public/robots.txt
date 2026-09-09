@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://seifertsites.com/sitemap.xml
+Sitemap: https://www.seifertsites.com/sitemap.xml

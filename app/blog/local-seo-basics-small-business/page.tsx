@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "A practical guide to local SEO for small businesses. Google Business Profile, local keywords, schema markup, and reviews explained without the jargon.",
   alternates: {
     canonical:
-      "https://seifertsites.com/blog/local-seo-basics-small-business",
+      "https://www.seifertsites.com/blog/local-seo-basics-small-business",
   },
 };
 

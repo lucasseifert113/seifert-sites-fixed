@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Services | Web Design, Marketing & SEO | Seifert Sites",
   description:
     "Web design, local SEO, Google Ads, social media management, email marketing, brand identity, and website audits for local businesses.",
-  alternates: { canonical: "https://seifertsites.com/services" },
+  alternates: { canonical: "https://www.seifertsites.com/services" },
 };
 
 const serviceCategories = [

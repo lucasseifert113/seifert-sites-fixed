@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "About | Lucas Seifert - Web Designer in Platteville, WI",
   description:
     "Meet Lucas Seifert, the founder of Seifert Sites. Finance student and web designer helping local businesses in Wisconsin, Iowa, and Illinois look more credible online.",
-  alternates: { canonical: "https://seifertsites.com/about" },
+  alternates: { canonical: "https://www.seifertsites.com/about" },
 };
 
 const values = [

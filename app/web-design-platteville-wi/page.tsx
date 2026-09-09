@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Web Design in Platteville, WI | Seifert Sites",
   description:
     "Professional web design for Platteville businesses. Seifert Sites builds clean, modern websites for local businesses in Platteville, WI and the surrounding area.",
-  alternates: { canonical: "https://seifertsites.com/web-design-platteville-wi" },
+  alternates: { canonical: "https://www.seifertsites.com/web-design-platteville-wi" },
 };
 
 export default function PlattevilleWebDesign() {
@@ -49,7 +49,7 @@ export default function PlattevilleWebDesign() {
             {[
               {
                 title: "Built for local search",
-                text: "Every site I build is structured for local SEO so your business shows up when Platteville customers search for what you offer.",
+                text: "Clear service information, page titles, and crawlable pages help search engines understand your business and the area you serve.",
               },
               {
                 title: "Fast turnaround",
@@ -81,6 +81,18 @@ export default function PlattevilleWebDesign() {
             </p>
           </div>
           <div className="grid2">
+            <div className="card panelHighlight">
+              <span className="badge" style={{ marginBottom: 12 }}>Barber / Platteville</span>
+              <h3 className="h3">Tay Blendz at Cut Club Barbershop</h3>
+              <p className="muted" style={{ marginBottom: 16 }}>
+                A website for a barber at 45 N 3rd Street in downtown Platteville, featuring
+                recent cuts, services, directions, and direct appointment booking through The Cut.
+              </p>
+              <div className="btnRow">
+                <a className="btnPrimary" href="https://tayblendz.online" target="_blank" rel="noopener noreferrer">View live site</a>
+                <Link className="btnGhost" href="/blog/platteville-web-design-tay-blendz-averon">Read the project overview</Link>
+              </div>
+            </div>
             <div className="card panelHighlight">
               <span className="badge" style={{ marginBottom: 12 }}>Gym / Athletic Program</span>
               <h3 className="h3">Rebel Training</h3>

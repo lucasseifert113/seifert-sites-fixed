@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Contact | Get a Free Website Evaluation | Seifert Sites",
   description:
     "Book a free strategy call or send a message. Get honest feedback on your current site and a clear path to something better.",
-  alternates: { canonical: "https://seifertsites.com/contact" },
+  alternates: { canonical: "https://www.seifertsites.com/contact" },
 };
 
 const prepItems = [

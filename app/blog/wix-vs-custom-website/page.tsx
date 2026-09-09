@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "An honest comparison of Wix and custom websites for small businesses. When Wix works, when it does not, and what you actually give up with a builder.",
   alternates: {
-    canonical: "https://seifertsites.com/blog/wix-vs-custom-website",
+    canonical: "https://www.seifertsites.com/blog/wix-vs-custom-website",
   },
 };
 

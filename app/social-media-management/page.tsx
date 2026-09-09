@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Social Media Management for Local Businesses | Seifert Sites",
   description:
     "Social media management and content creation for small businesses. Instagram, Facebook, and Google Business Profile posting to build trust and stay visible.",
-  alternates: { canonical: "https://seifertsites.com/social-media-management" },
+  alternates: { canonical: "https://www.seifertsites.com/social-media-management" },
 };
 
 export default function SocialMediaManagementPage() {

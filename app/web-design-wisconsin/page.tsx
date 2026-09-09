@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Wisconsin Web Design for Small Businesses | Seifert Sites",
   description:
     "Small business web design across Wisconsin. Seifert Sites builds clean, modern websites for WI businesses in Platteville, Dodgeville, Baraboo, and beyond.",
-  alternates: { canonical: "https://seifertsites.com/web-design-wisconsin" },
+  alternates: { canonical: "https://www.seifertsites.com/web-design-wisconsin" },
 };
 
 const towns = [

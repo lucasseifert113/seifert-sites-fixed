@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Google & Meta Ads Management | Seifert Sites",
   description:
     "Google Ads and Facebook/Meta ads management for small businesses. PPC advertising that puts your offer in front of customers ready to buy.",
-  alternates: { canonical: "https://seifertsites.com/google-ads" },
+  alternates: { canonical: "https://www.seifertsites.com/google-ads" },
 };
 
 export default function GoogleAdsPage() {

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Most business owners do not realize their website is pushing customers away. Here are 5 red flags that mean your site is hurting your business.",
   alternates: {
     canonical:
-      "https://seifertsites.com/blog/5-signs-your-website-is-costing-you-customers",
+      "https://www.seifertsites.com/blog/5-signs-your-website-is-costing-you-customers",
   },
 };
 

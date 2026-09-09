@@ -8,7 +8,7 @@ import { featuredProject, proofItems, site } from "./lib/site";
 import { recentProjects } from "./lib/recent-projects";
 
 export const metadata: Metadata = {
-  title: "Seifert Sites | Premium Web Design for Local Businesses in Platteville, WI",
+  title: { absolute: "Platteville Web Design for Small Businesses | Seifert Sites" },
   description:
     "Seifert Sites builds clean, modern websites for local businesses that need more credibility, better positioning, and more leads. Based in Platteville, WI.",
   alternates: { canonical: site.domain },
@@ -77,14 +77,14 @@ export default function Home() {
               </span>
             </div>
 
-            <p className="eyebrow">Seifert Sites · Web design and development</p>
+            <p className="eyebrow">Seifert Sites · Platteville, Wisconsin</p>
             <h1 className="h1">
-              Websites that make your business look{" "}
-              <span className="accent">more credible</span> and convert better.
+              <span className="accent">Web design in Platteville, WI</span>{" "}
+              for small businesses.
             </h1>
             <p className="lead">
-              I build clean, modern websites for local businesses that are tired of looking outdated,
-              hard to trust, or impossible to navigate.
+              I’m Lucas Seifert, a web designer based in Platteville. I build websites for local
+              businesses, coaches, and service providers, with clear services and an easy path to book or get in touch.
             </p>
 
             <div className="btnRow">

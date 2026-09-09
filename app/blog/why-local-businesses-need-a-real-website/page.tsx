@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "A Facebook page is not a website. Here is why that matters for trust, SEO, and getting found by customers ready to buy.",
   alternates: {
-    canonical: "https://seifertsites.com/blog/why-local-businesses-need-a-real-website",
+    canonical: "https://www.seifertsites.com/blog/why-local-businesses-need-a-real-website",
   },
 };
 

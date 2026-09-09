@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "A straightforward breakdown of website costs for small businesses. DIY builders, freelancers, and agencies compared so you know what you are actually paying for.",
   alternates: {
-    canonical: "https://seifertsites.com/blog/how-much-does-a-website-cost",
+    canonical: "https://www.seifertsites.com/blog/how-much-does-a-website-cost",
   },
 };
 
