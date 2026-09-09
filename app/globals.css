@@ -542,3 +542,41 @@ a {
     font-size: 17px;
   }
 }
+
+/* Shared tracks keep portfolio headings, descriptions, and actions aligned. */
+.workGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+.workCard {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+  row-gap: 16px;
+}
+.workCard .badge {
+  justify-self: start;
+  align-self: start;
+}
+.workCard .h3,
+.workCard .muted {
+  margin: 0;
+}
+.workActions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding-top: 8px;
+}
+.workCaseStudy {
+  font-size: 14px;
+  text-underline-offset: 4px;
+}
+@media (max-width: 900px) {
+  .workGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .workGrid { grid-template-columns: minmax(0, 1fr); }
+}

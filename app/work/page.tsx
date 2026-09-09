@@ -10,6 +10,37 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.seifertsites.com/work" },
 };
 
+const projects: { name: string; desc: string; url: string; tag: string; caseStudy?: string }[] = [
+  ...recentProjects.map((project) => ({
+    ...project,
+    tag: project.name === "Tay Blendz" ? "Barber" : "Sports recruiting",
+  })),
+  {
+    name: "Rebel Training",
+    tag: "Wrestling & fitness",
+    desc: "Wrestling gym website organizing programs, pricing, and clear next steps in a sharper, more credible brand experience.",
+    url: "https://rebeltraining.org",
+    caseStudy: "/work/rebel-training",
+  },
+  {
+    name: "Lucas Seifert Online",
+    tag: "Personal brand",
+    desc: "Personal brand and portfolio site built to establish authority, showcase client work, and convert visitors into leads.",
+    url: "https://lucasseifert.online",
+  },
+  {
+    name: "TideGuard",
+    tag: "Climate education",
+    desc: "Educational website covering coastal climate risk, sea-level rise, flooding, erosion, and resilience.",
+    url: "https://tideguard.org",
+  },
+  {
+    name: "Andy LeBrun Lacrosse",
+    tag: "Lacrosse coaching",
+    desc: "Multi-page website built to improve credibility, sharpen positioning, and make information easier to navigate.",
+    url: "https://lebrunlacrosse.online",
+  },
+];
 export default function WorkPage() {
   return (
     <main>
@@ -21,91 +52,22 @@ export default function WorkPage() {
             <h2 className="h2">Selected projects</h2>
           </div>
 
-          <div className="gridAuto">
-            {recentProjects.map((project) => (
-              <div key={project.url} className="card panelHighlight">
-                <span className="badge" style={{ marginBottom: 12 }}>{project.tag}</span>
+          <div className="workGrid">
+            {projects.map((project) => (
+              <article key={project.url} className="card panelHighlight workCard">
+                <span className="badge">{project.tag}</span>
                 <h3 className="h3">{project.name}</h3>
-                <p className="muted" style={{ marginBottom: 16 }}>{project.desc}</p>
-                <div className="btnRow">
+                <p className="muted">{project.desc}</p>
+                <div className="workActions">
                   <a className="btnPrimary" href={project.url} target="_blank" rel="noopener noreferrer">
                     View live site
                   </a>
+                  {project.caseStudy ? (
+                    <Link className="workCaseStudy" href={project.caseStudy}>Read case study →</Link>
+                  ) : null}
                 </div>
-              </div>
+              </article>
             ))}
-
-            <div className="card panelHighlight">
-              <h3 className="h3">Rebel Training</h3>
-              <p className="muted" style={{ marginBottom: 16 }}>
-                Wrestling gym website built to make the brand feel sharper, more legitimate, and easier to trust while clearly organizing programs, pricing, and calls to action.
-              </p>
-              <div className="btnRow">
-                <Link className="btnPrimary" href="/work/rebel-training">
-                  Read case study
-                </Link>
-                <a
-                  className="btnGhost"
-                  href="https://rebeltraining.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View live site
-                </a>
-              </div>
-            </div>
-
-            <div className="card panelHighlight">
-              <h3 className="h3">Lucas Seifert Online</h3>
-              <p className="muted" style={{ marginBottom: 16 }}>
-                Personal brand and portfolio site built to establish authority, showcase client work, and convert visitors into leads.
-              </p>
-              <div className="btnRow">
-                <a
-                  className="btnPrimary"
-                  href="https://lucasseifert.online"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View live site
-                </a>
-              </div>
-            </div>
-
-            <div className="card panelHighlight">
-              <h3 className="h3">TideGuard</h3>
-              <p className="muted" style={{ marginBottom: 16 }}>
-                Educational website focused on coastal climate risk, sea-level rise, flooding, erosion, and resilience messaging for a mission-driven project.
-              </p>
-              <div className="btnRow">
-                <a
-                  className="btnPrimary"
-                  href="https://tideguard.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View live site
-                </a>
-              </div>
-            </div>
-
-            <div className="card panelHighlight">
-              <h3 className="h3">Andy LeBrun Lacrosse</h3>
-              <p className="muted" style={{ marginBottom: 16 }}>
-                Multi-page website built to improve credibility, sharpen positioning, and make information easier to navigate.
-              </p>
-              <div className="btnRow">
-                <a
-                  className="btnPrimary"
-                  href="https://lebrunlacrosse.online"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View live site
-                </a>
-              </div>
-            </div>
-
           </div>
         </div>
       </section>
