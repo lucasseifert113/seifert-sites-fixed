@@ -3,7 +3,7 @@ import Link from "next/link";
 import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 
 export const metadata: Metadata = {
-  title: "Website Audit | Find What's Hurting Your Business Online | Seifert Sites",
+  title: "Website Audit | Find What's Hurting Your Business Online",
   description:
     "Website audits for small businesses. Performance, SEO, UX, and conversion analysis with a clear action plan to improve your site.",
   alternates: { canonical: "https://www.seifertsites.com/website-audits" },

@@ -3,7 +3,7 @@ import Link from "next/link";
 import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 
 export const metadata: Metadata = {
-  title: "Google & Meta Ads Management | Seifert Sites",
+  title: "Google & Meta Ads Management",
   description:
     "Google Ads and Facebook/Meta ads management for small businesses. PPC advertising that puts your offer in front of customers ready to buy.",
   alternates: { canonical: "https://www.seifertsites.com/google-ads" },

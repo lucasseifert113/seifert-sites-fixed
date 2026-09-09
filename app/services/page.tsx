@@ -3,7 +3,7 @@ import Link from "next/link";
 import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 
 export const metadata: Metadata = {
-  title: "Services | Web Design, Marketing & SEO | Seifert Sites",
+  title: "Services | Web Design, Marketing & SEO",
   description:
     "Web design, local SEO, Google Ads, social media management, email marketing, brand identity, and website audits for local businesses.",
   alternates: { canonical: "https://www.seifertsites.com/services" },

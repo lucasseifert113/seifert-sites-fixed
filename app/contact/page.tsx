@@ -4,7 +4,7 @@ import ContactForm from "../components/ContactForm";
 import { site } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact | Get a Free Website Evaluation | Seifert Sites",
+  title: "Contact | Get a Free Website Evaluation",
   description:
     "Book a free strategy call or send a message. Get honest feedback on your current site and a clear path to something better.",
   alternates: { canonical: "https://www.seifertsites.com/contact" },

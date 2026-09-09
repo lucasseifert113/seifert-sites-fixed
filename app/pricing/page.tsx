@@ -4,7 +4,7 @@ import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 import PricingJsonLd from "../components/PricingJsonLd";
 
 export const metadata: Metadata = {
-  title: "Pricing | Web Design, Marketing & SEO | Seifert Sites",
+  title: "Pricing | Web Design, Marketing & SEO",
   description:
     "Web design starting at $250/page. Local SEO, Google Ads, social media, brand identity, and website audits. Clear pricing for local businesses.",
   alternates: { canonical: "https://www.seifertsites.com/pricing" },

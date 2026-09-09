@@ -4,7 +4,7 @@ import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 import { recentProjects } from "../lib/recent-projects";
 
 export const metadata: Metadata = {
-  title: "Our Work | Websites Built for Real Businesses | Seifert Sites",
+  title: "Our Work | Websites Built for Real Businesses",
   description:
     "See websites Seifert Sites has built for local businesses, coaches, and brands. Real projects, real results.",
   alternates: { canonical: "https://www.seifertsites.com/work" },

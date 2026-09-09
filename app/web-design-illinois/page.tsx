@@ -3,7 +3,7 @@ import Link from "next/link";
 import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 
 export const metadata: Metadata = {
-  title: "Illinois Web Design for Small Businesses | Seifert Sites",
+  title: "Illinois Web Design for Small Businesses",
   description:
     "Professional web design for Illinois small businesses. Seifert Sites builds clean, modern websites for businesses in Galena, Freeport, Dixon, and northern Illinois.",
   alternates: { canonical: "https://www.seifertsites.com/web-design-illinois" },

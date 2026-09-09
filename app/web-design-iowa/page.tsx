@@ -3,7 +3,7 @@ import Link from "next/link";
 import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 
 export const metadata: Metadata = {
-  title: "Iowa Web Design for Small Businesses | Seifert Sites",
+  title: "Iowa Web Design for Small Businesses",
   description:
     "Professional web design for Iowa small businesses. Seifert Sites builds clean, modern websites for businesses in Dubuque, Decorah, and eastern Iowa.",
   alternates: { canonical: "https://www.seifertsites.com/web-design-iowa" },

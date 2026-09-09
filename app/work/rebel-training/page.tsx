@@ -3,7 +3,7 @@ import Link from "next/link";
 import FreeEvaluationCTA from "../../components/FreeEvaluationCTA";
 
 export const metadata: Metadata = {
-  title: "Rebel Training Case Study | Wrestling Gym Website | Seifert Sites",
+  title: "Rebel Training Case Study | Wrestling Gym Website",
   description:
     "How Seifert Sites built a complete website for Rebel Training, a wrestling and strength gym. Programs, pricing, coach profiles, scheduling, and membership integration.",
   alternates: { canonical: "https://www.seifertsites.com/work/rebel-training" },

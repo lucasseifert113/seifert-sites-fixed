@@ -3,7 +3,7 @@ import Link from "next/link";
 import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 
 export const metadata: Metadata = {
-  title: "Social Media Management for Local Businesses | Seifert Sites",
+  title: "Social Media Management for Local Businesses",
   description:
     "Social media management and content creation for small businesses. Instagram, Facebook, and Google Business Profile posting to build trust and stay visible.",
   alternates: { canonical: "https://www.seifertsites.com/social-media-management" },

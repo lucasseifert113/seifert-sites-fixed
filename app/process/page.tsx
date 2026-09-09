@@ -3,7 +3,7 @@ import Link from "next/link";
 import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 
 export const metadata: Metadata = {
-  title: "Our Process | Discovery to Launch in 4 Steps | Seifert Sites",
+  title: "Our Process | Discovery to Launch in 4 Steps",
   description:
     "Simple 4-step web design process: Discovery, Design, Build, Launch. No bloated agency timelines. Fast, clean execution.",
   alternates: { canonical: "https://www.seifertsites.com/process" },

@@ -3,7 +3,7 @@ import Link from "next/link";
 import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 
 export const metadata: Metadata = {
-  title: "Web Design in Platteville, WI | Seifert Sites",
+  title: "Web Design in Platteville, WI",
   description:
     "Professional web design for Platteville businesses. Seifert Sites builds clean, modern websites for local businesses in Platteville, WI and the surrounding area.",
   alternates: { canonical: "https://www.seifertsites.com/web-design-platteville-wi" },
