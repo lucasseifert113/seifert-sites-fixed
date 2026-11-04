@@ -164,10 +164,9 @@ export default function Home() {
         <div className="container">
           <div style={{ maxWidth: 760, marginBottom: 28 }}>
             <p className="eyebrow">Why businesses hire me</p>
-            <h2 className="h2">The problem usually is not traffic. It is trust.</h2>
+            <h2 className="h2">Give customers a reason to reach out.</h2>
             <p className="lead">
-              A weak site quietly kills referrals, inbound leads, and close rate. If the business looks
-              second-rate online, people assume the service is second-rate too.
+              Show a visitor what you offer, examples of your work, and the next step to take. Those are the details I build around.
             </p>
           </div>
 

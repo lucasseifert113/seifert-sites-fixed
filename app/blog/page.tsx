@@ -36,9 +36,9 @@ const posts = [
   },
   {
     slug: "google-business-profile-guide",
-    title: "Why your Google Business Profile matters more than your website",
+    title: "A small business guide to Google Business Profile",
     excerpt:
-      "Most customers find you on Google before they see your website. Here is what to optimize in your profile and why it matters more than you think.",
+      "Help nearby customers check your hours, understand your services, and reach the right person.",
     date: "April 2026",
     tag: "Local SEO",
     readTime: "6 min read",

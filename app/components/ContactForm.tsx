@@ -23,7 +23,10 @@ export default function ContactForm() {
       }
       data.set(field, value);
     }
-    data.set("subject", "Seifert Sites LLC | Evaluation inquiry | Business and goal supplied");
+    const projectIntent = data.get("projectIntent") === "yes";
+    data.set("subject", projectIntent
+      ? "Seifert Sites LLC | Evaluation inquiry | Considering paid work"
+      : "Seifert Sites LLC | Evaluation inquiry | Feedback only");
     setStatus("sending");
     try {
       data.append("access_key", "415fcd94-5170-4925-a1e6-8e0ffe797de9");
@@ -172,6 +175,7 @@ export default function ContactForm() {
         />
       </div>
 
+      <label><input type="checkbox" name="projectIntent" value="yes" /> I’m considering hiring someone to work on this website.</label>
       <p className="mutedSmall">Web3Forms delivers this request to Seifert Sites LLC by email. <Link href="/privacy">Read our privacy notice</Link>.</p>
       <button
         type="submit"

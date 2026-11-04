@@ -38,7 +38,7 @@ export default function SocialMediaManagementPage() {
             </div>
             <div className="card">
               <h3 className="h3" style={{ fontSize: 24, marginBottom: 12 }}>Consistent Posting</h3>
-              <p className="muted">Scheduled posts 3 to 5 times per week. Consistency is how you stay visible and build an audience without you thinking about it.</p>
+              <p className="muted">Scheduled posts three times per week. Consistency is how you stay visible and build an audience without you thinking about it.</p>
             </div>
             <div className="card">
               <h3 className="h3" style={{ fontSize: 24, marginBottom: 12 }}>Community Engagement</h3>
@@ -86,7 +86,7 @@ export default function SocialMediaManagementPage() {
               <h3 className="h3">What's included</h3>
               <ul className="list" style={{ marginTop: 12 }}>
                 <li>Content calendar and strategy</li>
-                <li>3 to 5 posts per week</li>
+                <li>Three posts per week</li>
                 <li>Original content creation</li>
                 <li>Post scheduling and publishing</li>
                 <li>Community engagement and responses</li>
