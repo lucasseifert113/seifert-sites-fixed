@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/pricing`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/process`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/about`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/blog/wedding-venue-seo-southwest-wisconsin`, lastModified: "2026-11-04", changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/blog`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/blog/how-to-market-your-small-business-online`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/blog/platteville-web-design-tay-blendz-averon`, lastModified: "2026-09-09", changeFrequency: "monthly", priority: 0.7 },
