@@ -13,23 +13,21 @@ export default function BuildOffer() {
   const [status, setStatus] = useState<"idle" | "sending" | "claimed" | "error">("idle");
 
   useEffect(() => {
-    const button = trigger.current;
-    if (!button) return;
+    const requested = new URLSearchParams(window.location.search).get("offer") === "FIRSTSITE25";
     try {
       const saved = localStorage.getItem(storageKey);
       if (saved === "claimed") setStatus("claimed");
-      if (saved) return;
+      if (saved && !requested) return;
     } catch { /* Storage may be unavailable in private browsing. */ }
-    const observer = new IntersectionObserver(([entry]) => {
-      if (!entry.isIntersecting) return;
-      observer.disconnect();
-      if (!dialog.current?.open && document.activeElement === document.body) {
-        remember("seen");
-        dialog.current?.showModal();
-      }
-    }, { threshold: 1 });
-    observer.observe(button);
-    return () => observer.disconnect();
+    const timer = window.setTimeout(() => {
+      if (!dialog.current || dialog.current.open) return;
+      if (!requested && document.activeElement !== document.body) return;
+      dialog.current.showModal();
+      try {
+        if (localStorage.getItem(storageKey) !== "claimed") remember("seen");
+      } catch { /* Browser storage is optional. */ }
+    }, requested ? 0 : 1600);
+    return () => window.clearTimeout(timer);
   }, []);
 
   function remember(state: "seen" | "claimed") {
@@ -52,7 +50,7 @@ export default function BuildOffer() {
     }
   }
 
-  return <div className="container offerEntry">
+  return <div className="offerEntry">
     <button className="btnGhost" ref={trigger} onClick={() => {
       if (status !== "claimed") remember("seen");
       dialog.current?.showModal();

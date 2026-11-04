@@ -1,3 +1,4 @@
+import BuildOffer from "./components/BuildOffer";
 import type { Metadata } from "next";
 import Link from "next/link";
 import FreeEvaluationCTA from "./components/FreeEvaluationCTA";
@@ -88,6 +89,7 @@ export default function Home() {
                 {site.secondaryCta}
               </Link>
             </div>
+            <BuildOffer />
 
             <div className="kickerRow" style={{ marginTop: 20 }}>
               {proofItems.map((item) => (

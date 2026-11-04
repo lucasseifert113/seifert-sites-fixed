@@ -72,6 +72,7 @@ export default function PricingPage() {
           <p className="lead">
             Prices cover the project. Page count, integrations, and content needs determine your quote within each range. Maintenance is priced separately.
           </p>
+          <BuildOffer />
         </div>
       </section>
 
@@ -117,7 +118,6 @@ export default function PricingPage() {
             </div>
           ))}
         </div>
-        <BuildOffer />
       </section>
 
       <section className="section sectionBorder">
