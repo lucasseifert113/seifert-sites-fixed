@@ -1,5 +1,6 @@
 "use client";
 
+import { sendWebsiteForm } from "../lib/forms";
 import Link from "next/link";
 import { useState, FormEvent } from "react";
 
@@ -29,19 +30,9 @@ export default function ContactForm() {
       : "Seifert Sites LLC | Evaluation inquiry | Feedback only");
     setStatus("sending");
     try {
-      data.append("access_key", "415fcd94-5170-4925-a1e6-8e0ffe797de9");
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
-      });
-
-      if (res.ok && (await res.json()).success === true) {
-        setStatus("sent");
-        form.reset();
-      } else {
-        setStatus("error");
-      }
+      await sendWebsiteForm(data);
+      setStatus("sent");
+      form.reset();
     } catch {
       setStatus("error");
     }

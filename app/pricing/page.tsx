@@ -1,3 +1,4 @@
+import BuildOffer from "../components/BuildOffer";
 import { site } from "../lib/site";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -116,6 +117,7 @@ export default function PricingPage() {
             </div>
           ))}
         </div>
+        <BuildOffer />
       </section>
 
       <section className="section sectionBorder">

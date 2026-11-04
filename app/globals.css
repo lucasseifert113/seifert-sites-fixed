@@ -587,3 +587,11 @@ form input, form textarea, .inquiryFields > div { min-width: 0; }
 @media (max-width: 640px) { .inquiryFields { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 768px) { .navLinks:not(.navLinksOpen) { display: none; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0s !important; animation-duration: 0s !important; } }
+
+.offerEntry { margin-top: 24px; }
+.buildOffer { width: min(460px, calc(100% - 24px)); max-height: 88dvh; overflow: auto; padding: 24px; color: #fff; background: #15161b; border: 1px solid #69666a; border-radius: 18px; }
+.buildOffer::backdrop { background: rgb(0 0 0 / 65%); }
+.buildOffer form, .buildOffer label { display: grid; gap: 8px; }
+.buildOffer form { gap: 16px; }
+.buildOffer input { width: 100%; border: 1px solid #928f92; border-radius: 8px; background: #101116; color: white; padding: 10px; font: inherit; }
+.offerClose { display: block; margin: 0 0 12px auto; background: transparent; color: white; padding: 8px 12px; border: 1px solid #928f92; border-radius: 8px; }
