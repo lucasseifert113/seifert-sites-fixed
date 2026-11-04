@@ -10,6 +10,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "wedding-venue-seo-southwest-wisconsin",
+    title: "Wedding Venue SEO: How to Get More Tour Inquiries in Southwest Wisconsin",
+    excerpt: "Seven specific ways to improve local visibility, explain your venue clearly, and turn searches into tour requests without managing a booking calendar.",
+    date: "November 2026",
+    tag: "Wedding venue SEO",
+    readTime: "6 min read",
+  },
+  {
     slug: "platteville-web-design-tay-blendz-averon",
     title: "Platteville web design: Tay Blendz and Averon Sports Group",
     excerpt: "Explore two recent Seifert Sites projects: a local barber website and a sports recruiting and representation brand.",
