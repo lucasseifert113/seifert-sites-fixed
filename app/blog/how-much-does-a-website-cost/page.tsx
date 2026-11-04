@@ -66,11 +66,7 @@ export default function Post() {
                 $5,000 is likely building something more custom with better strategic input.
               </p>
               <p className="muted" style={{ marginBottom: 32 }}>
-                At Seifert Sites, pricing runs $175 to $250 per page depending on the plan,
-                with $50 per month for ongoing updates. A 4-page Growth site lands around
-                $850 to $1,250 total. You get a custom design, real conversion thinking, and
-                direct communication throughout. Not a template, not a hand-off to a junior
-                developer.
+                See our <Link href="/pricing">current website packages</Link> for project ranges and ongoing maintenance.
               </p>
 
               <h2 className="h2">Agencies: $5,000 to $50,000+</h2>
@@ -113,11 +109,9 @@ export default function Post() {
 
               <div className="btnRow">
                 <Link className="btnPrimary" href="/pricing">
-                  See Seifert Sites pricing
+                  See Seifert Sites LLC pricing
                 </Link>
-                <Link className="btnGhost" href="/contact">
-                  Get a free evaluation
-                </Link>
+                <Link className="btnGhost" href="/contact">Request a free website evaluation</Link>
               </div>
 
               <div className="inlineDivider" style={{ margin: "40px 0" }} />

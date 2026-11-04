@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 import ContactForm from "../components/ContactForm";
 import { site } from "../lib/site";
 
 export const metadata: Metadata = {
   title: "Contact | Get a Free Website Evaluation",
   description:
-    "Book a free strategy call or send a message. Get honest feedback on your current site and a clear path to something better.",
+    "Request a free website evaluation from Seifert Sites LLC.",
   alternates: { canonical: "https://www.seifertsites.com/contact" },
 };
 
@@ -22,43 +21,21 @@ export default function ContactPage() {
     <main>
       <section className="hero">
         <div className="container">
-          <p className="eyebrow">Contact · Seifert Sites</p>
+          <p className="eyebrow">Contact · Seifert Sites LLC</p>
           <h1 className="h1">
-            Let&apos;s build something that <span className="accent">actually helps the business</span>.
-          </h1>
-          <p className="lead">
-            Keep it simple. Tell me what you do, what you need, and what the current bottleneck is.
-          </p>
+            Request a free website evaluation
+            </h1>
+            <p className="lead">{site.evaluation}</p>
         </div>
       </section>
 
-      <FreeEvaluationCTA
-        eyebrow="Free website evaluation"
-        title="Want honest feedback before you spend money?"
-        text="Book a free website evaluation and I'll tell you what's weak, what's costing you trust, and what I'd fix first. No fluff. No obligation."
-      />
+
 
       <section className="section sectionBorder">
         <div className="container grid2">
           <ContactForm />
 
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-            <div className="card panelHighlight">
-              <p className="eyebrow">Fastest path</p>
-              <h2 className="h2">Book a strategy call</h2>
-              <p className="muted">
-                Best option if you want direct feedback, a rough scope, and clear next steps.
-              </p>
-              <div className="btnRow">
-                <a className="btnPrimary" href={site.calendlyUrl} target="_blank" rel="noreferrer">
-                  {site.primaryCta}
-                </a>
-              </div>
-              <p className="mutedSmall" style={{ marginTop: 14 }}>
-                30-minute intro call. Clear direction. No wasted time.
-              </p>
-            </div>
-
             <div className="card">
               <p className="eyebrow">Prefer email?</p>
               <p className="muted">
@@ -70,9 +47,7 @@ export default function ContactPage() {
                   {site.email}
                 </a>
               </p>
-              <p className="mutedSmall" style={{ marginTop: 8 }}>
-                I will get back to you within 24 hours.
-              </p>
+
             </div>
 
             <div className="card">

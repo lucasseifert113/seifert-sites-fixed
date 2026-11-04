@@ -15,13 +15,8 @@ export default function JsonLd() {
       addressRegion: site.location.state,
       addressCountry: site.location.country,
     },
-    areaServed: [
-      { "@type": "State", name: "Wisconsin" },
-      { "@type": "State", name: "Iowa" },
-      { "@type": "State", name: "Illinois" },
-    ],
-    priceRange: "$250 - $4,000+",
-    image: `${site.domain}/og.png`,
+    areaServed: { "@type": "Country", name: "United States" },
+    image: `${site.domain}/opengraph-image`,
     sameAs: [],
     serviceType: "Web Design",
     hasOfferCatalog: {

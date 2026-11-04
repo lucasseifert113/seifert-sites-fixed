@@ -34,8 +34,7 @@ export default function Post() {
               <span className="accent">costing you customers</span>.
             </h1>
             <p className="lead">
-              Your website might look fine to you. But your customers are forming an opinion
-              in under three seconds. Here is what pushes them away.
+              Try these five checks from the perspective of someone visiting for the first time.
             </p>
             <p className="mutedSmall" style={{ marginTop: 16 }}>
               April 2026 · By Lucas Seifert
@@ -83,14 +82,10 @@ export default function Post() {
 
               <h2 className="h2">4. It loads slowly</h2>
               <p className="muted" style={{ marginBottom: 24 }}>
-                Every second of load time costs you visitors. If your site takes more than
-                three seconds to load, nearly half of people will leave before they see
-                anything. Oversized images, bloated plugins, and cheap hosting are the usual
-                culprits.
+                Large images and unnecessary scripts can delay the moment a visitor can read the page or use a button.
               </p>
               <p className="muted" style={{ marginBottom: 32 }}>
-                A clean, lightweight build on modern hosting loads in under a second. That is
-                what your customers expect.
+                Test your main landing page on a phone and a slower connection. Start with what gets in the way of contacting you.
               </p>
 
               <h2 className="h2">5. The content does not match your quality</h2>
@@ -120,9 +115,7 @@ export default function Post() {
               </p>
 
               <div className="btnRow">
-                <Link className="btnPrimary" href="/contact">
-                  Get a free website evaluation
-                </Link>
+                <Link className="btnPrimary" href="/contact">Request a free website evaluation</Link>
                 <Link className="btnGhost" href="/blog">
                   Back to blog
                 </Link>

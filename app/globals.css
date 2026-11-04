@@ -580,3 +580,10 @@ a {
 @media (max-width: 600px) {
   .workGrid { grid-template-columns: minmax(0, 1fr); }
 }
+
+.inquiryFields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+form input, form textarea, .inquiryFields > div { min-width: 0; }
+:focus-visible { outline: 3px solid #ffbe87; outline-offset: 3px; }
+@media (max-width: 640px) { .inquiryFields { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 768px) { .navLinks:not(.navLinksOpen) { display: none; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0s !important; animation-duration: 0s !important; } }

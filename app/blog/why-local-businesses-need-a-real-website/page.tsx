@@ -45,7 +45,7 @@ export default function Post() {
               <p className="muted" style={{ marginBottom: 32 }}>A clean, professional website can start at a few hundred dollars. It does not need to be 20 pages. It needs to be clear, fast, mobile-friendly, and built to make your business look as good as it actually is.</p>
 
               <div className="btnRow">
-                <Link className="btnPrimary" href="/contact">Get a free website evaluation</Link>
+                <Link className="btnPrimary" href="/contact">Request a free website evaluation</Link>
                 <Link className="btnGhost" href="/blog">Back to blog</Link>
               </div>
 

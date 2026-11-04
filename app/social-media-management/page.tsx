@@ -1,3 +1,4 @@
+import { site } from "@/app/lib/site";
 import type { Metadata } from "next";
 import Link from "next/link";
 import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
@@ -14,7 +15,7 @@ export default function SocialMediaManagementPage() {
     <main>
       <section className="hero">
         <div className="container">
-          <p className="eyebrow">Social Media Management · Seifert Sites</p>
+          <p className="eyebrow">Social Media Management · Seifert Sites LLC</p>
           <h1 className="h1">
             Stay visible and build trust with <span className="accent">consistent social posting</span>.
           </h1>
@@ -77,7 +78,7 @@ export default function SocialMediaManagementPage() {
         <div className="container">
           <div style={{ maxWidth: 760, marginBottom: 28 }}>
             <p className="eyebrow">Pricing</p>
-            <h2 className="h2">$500 per month</h2>
+            <h2 className="h2">{site.pricing.social}</h2>
             <p className="lead">Complete social media management. All platforms included.</p>
           </div>
           <div className="grid2">
@@ -92,7 +93,7 @@ export default function SocialMediaManagementPage() {
                 <li>Monthly analytics report</li>
               </ul>
               <div className="btnRow" style={{ marginTop: 20 }}>
-                <Link className="btnPrimary" href="/contact">Get started</Link>
+                <Link className="btnPrimary" href="/contact">Request a free website evaluation</Link>
                 <Link className="btnGhost" href="/pricing">See all pricing</Link>
               </div>
             </div>
@@ -132,30 +133,7 @@ export default function SocialMediaManagementPage() {
         </div>
       </section>
 
-      <FreeEvaluationCTA
-        eyebrow="Free audit"
-        title="Not sure if social media is the right move for you?"
-        text="Book a call and I'll audit your current presence, tell you what's working on other platforms in your industry, and whether social media makes sense for your business right now."
-      />
-
-      <section className="section sectionBorder">
-        <div className="container grid2">
-          <div className="card">
-            <h2 className="h2">Social media is not optional</h2>
-            <p className="muted">Your customers are on Instagram, Facebook, and Google Business Profile. If you don't show up consistently, they forget you. Managed social media is one of the cheapest ways to stay visible and build authority.</p>
-          </div>
-
-          <div className="card panelHighlight">
-            <p className="eyebrow">Ready to stay visible</p>
-            <h2 className="h2">Ready to build a social presence?</h2>
-            <p className="muted">Book a call and we will talk about your brand, content strategy, and what consistent posting can do for your business.</p>
-            <div className="btnRow">
-              <Link className="btnPrimary" href="/contact">Book a strategy call</Link>
-              <Link className="btnGhost" href="/services">See all services</Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FreeEvaluationCTA />
     </main>
   );
 }

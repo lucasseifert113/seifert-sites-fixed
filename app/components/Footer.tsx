@@ -25,7 +25,7 @@ export default function Footer() {
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 10, fontWeight: 650 }}>
-            <Image src="/logo.png" alt="Seifert Sites" width={22} height={22} />
+            <Image src="/logo.png" alt="Seifert Sites LLC" width={22} height={22} />
             <div style={{ display: "grid", gap: 2 }}>
               <span>{site.name}</span>
               <span style={{ color: "rgba(255,255,255,0.5)", fontSize: 12 }}>
@@ -41,7 +41,8 @@ export default function Footer() {
               <Link href="/pricing" style={{ textDecoration: "none" }}>Pricing</Link>
               <Link href="/about" style={{ textDecoration: "none" }}>About</Link>
               <Link href="/blog" style={{ textDecoration: "none" }}>Blog</Link>
-              <Link href="/contact" style={{ textDecoration: "none" }}>Contact</Link>
+              <Link href="/privacy">Privacy</Link>
+              <Link href="/contact" style={{ textDecoration: "none" }}>Request a free website evaluation</Link>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
               <span style={{ color: "rgba(255,255,255,0.3)", fontSize: 11, letterSpacing: "0.8px", textTransform: "uppercase" }}>Service Areas</span>

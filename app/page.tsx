@@ -2,15 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import FreeEvaluationCTA from "./components/FreeEvaluationCTA";
 import Testimonials from "./components/Testimonials";
-import Stats from "./components/Stats";
 import JsonLd from "./components/JsonLd";
 import { featuredProject, proofItems, site } from "./lib/site";
 import { recentProjects } from "./lib/recent-projects";
 
 export const metadata: Metadata = {
-  title: { absolute: "Platteville Web Design for Small Businesses | Seifert Sites" },
+  title: { absolute: "Small Business Web Design Nationwide from Platteville, WI | Seifert Sites LLC" },
   description:
-    "Seifert Sites builds clean, modern websites for local businesses that need more credibility, better positioning, and more leads. Based in Platteville, WI.",
+    "Seifert Sites LLC builds clean, modern websites for local businesses that need more credibility, better positioning, and more leads. Based in Platteville, WI.",
   alternates: { canonical: site.domain },
 };
 
@@ -77,15 +76,9 @@ export default function Home() {
               </span>
             </div>
 
-            <p className="eyebrow">Seifert Sites · Platteville, Wisconsin</p>
-            <h1 className="h1">
-              <span className="accent">Web design in Platteville, WI</span>{" "}
-              for small businesses.
-            </h1>
-            <p className="lead">
-              I’m Lucas Seifert, a web designer based in Platteville. I build websites for local
-              businesses, coaches, and service providers, with clear services and an easy path to book or get in touch.
-            </p>
+            <p className="eyebrow">Seifert Sites LLC · Platteville, Wisconsin</p>
+            <h1 className="h1">Give visitors the confidence to <span className="accent">get in touch.</span></h1>
+            <p className="lead">I’m Lucas Seifert. I build websites that show what you do, why customers trust you, and how to request a quote or book. Based in Platteville, Wisconsin, I work with small businesses nationwide.</p>
 
             <div className="btnRow">
               <Link className="btnPrimary" href="/contact">
@@ -161,9 +154,7 @@ export default function Home() {
                 View live site
               </a>
 
-              <Link className="btnText" href="/contact">
-                Start your project
-              </Link>
+              <Link className="btnText" href="/contact">Request a free website evaluation</Link>
             </div>
           </div>
         </div>
@@ -210,10 +201,10 @@ export default function Home() {
             <p className="eyebrow">Best fit</p>
             <h2 className="h2">Who this is for</h2>
             <p className="muted" style={{ marginTop: 12 }}>
-              Based in Platteville, WI and serving businesses across{" "}
-              <Link href="/web-design-wisconsin" style={{ color: "var(--orange2)", textDecoration: "none" }}>Wisconsin</Link>,{" "}
-              <Link href="/web-design-iowa" style={{ color: "var(--orange2)", textDecoration: "none" }}>Iowa</Link>, and{" "}
-              <Link href="/web-design-illinois" style={{ color: "var(--orange2)", textDecoration: "none" }}>Illinois</Link>.
+              Working nationwide, with regional web design services in{" "}
+              <Link href="/web-design-wisconsin" style={{ color: "var(--orange2)", textDecoration: "underline" }}>Wisconsin</Link>,{" "}
+              <Link href="/web-design-iowa" style={{ color: "var(--orange2)", textDecoration: "underline" }}>Iowa</Link>, and{" "}
+              <Link href="/web-design-illinois" style={{ color: "var(--orange2)", textDecoration: "underline" }}>Illinois</Link>.
             </p>
           </div>
 
@@ -276,36 +267,11 @@ export default function Home() {
         </div>
       </section>
 
-      <Stats />
+
 
       <Testimonials />
 
-      <FreeEvaluationCTA
-        eyebrow="Free website evaluation"
-        title="Before you rebuild, get clear on what is actually broken."
-        text="I'll review your current site and tell you what's hurting trust, what's hurting conversions, and what I'd fix first."
-      />
-
-      <section className="section sectionBorder">
-        <div className="container">
-          <div className="card panelHighlight" style={{ textAlign: "center" }}>
-            <p className="eyebrow">Next move</p>
-            <h2 className="h2">If your current site feels average, that is the problem.</h2>
-            <p className="lead" style={{ margin: "0 auto" }}>
-              You do not need more fluff. You need a sharper website that helps the business look easier
-              to trust and easier to buy from.
-            </p>
-            <div className="btnRow" style={{ justifyContent: "center" }}>
-              <Link className="btnPrimary" href="/contact">
-                {site.primaryCta}
-              </Link>
-              <Link className="btnGhost" href="/pricing">
-                See pricing
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FreeEvaluationCTA />
     </main>
   );
 }

@@ -20,7 +20,7 @@ const posts = [
   {
     slug: "platteville-web-design-tay-blendz-averon",
     title: "Platteville web design: Tay Blendz and Averon Sports Group",
-    excerpt: "Explore two recent Seifert Sites projects: a local barber website and a sports recruiting and representation brand.",
+    excerpt: "Explore two recent Seifert Sites LLC projects: a local barber website and a sports recruiting and representation brand.",
     date: "September 2026",
     tag: "Recent projects",
     readTime: "3 min read",
@@ -104,7 +104,7 @@ export default function BlogPage() {
     <main>
       <section className="hero">
         <div className="container">
-          <p className="eyebrow">Blog · Seifert Sites</p>
+          <p className="eyebrow">Blog · Seifert Sites LLC</p>
           <h1 className="h1">
             Practical advice for{" "}
             <span className="accent">local business owners</span>.

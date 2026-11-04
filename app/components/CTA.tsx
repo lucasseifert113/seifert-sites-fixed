@@ -14,7 +14,7 @@ export default function CTA() {
           <h2 className="h2" style={{ marginBottom: 8 }}>Ready to look premium?</h2>
           <p className="muted">Let’s build something that feels inevitable.</p>
           <div className="btnRow">
-            <Link className="btnPrimary" href="/contact">Book a call</Link>
+            <Link className="btnPrimary" href="/contact">Request a free website evaluation</Link>
             <Link className="btnGhost" href="/work">See work</Link>
           </div>
         </div>

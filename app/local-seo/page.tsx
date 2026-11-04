@@ -1,3 +1,4 @@
+import { site } from "@/app/lib/site";
 import type { Metadata } from "next";
 import Link from "next/link";
 import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
@@ -14,7 +15,7 @@ export default function LocalSEOPage() {
     <main>
       <section className="hero">
         <div className="container">
-          <p className="eyebrow">Local SEO · Seifert Sites</p>
+          <p className="eyebrow">Local SEO · Seifert Sites LLC</p>
           <h1 className="h1">
             Get found on Google Maps and <span className="accent">rank for local search</span>.
           </h1>
@@ -74,7 +75,7 @@ export default function LocalSEOPage() {
         <div className="container">
           <div style={{ maxWidth: 760, marginBottom: 28 }}>
             <p className="eyebrow">Pricing</p>
-            <h2 className="h2">$300 per month</h2>
+            <h2 className="h2">{site.pricing.seo} for Local SEO + Google Business Profile</h2>
             <p className="lead">Ongoing local SEO optimization, citation management, and ranking monitoring.</p>
           </div>
           <div className="grid2">
@@ -89,7 +90,7 @@ export default function LocalSEOPage() {
                 <li>Monthly ranking reports</li>
               </ul>
               <div className="btnRow" style={{ marginTop: 20 }}>
-                <Link className="btnPrimary" href="/contact">Get started</Link>
+                <Link className="btnPrimary" href="/contact">Request a free website evaluation</Link>
                 <Link className="btnGhost" href="/pricing">See all pricing</Link>
               </div>
             </div>
@@ -111,7 +112,7 @@ export default function LocalSEOPage() {
           <div className="grid2">
             <div className="card cardSoft">
               <h3 className="h3" style={{ fontSize: 20 }}>How long before I see results?</h3>
-              <p className="muted" style={{ marginTop: 12 }}>3 to 6 months typically. Local SEO compounds over time. Quick wins happen first (profile optimization), longer-term gains come from consistent citation building and content work.</p>
+              <p className="muted" style={{ marginTop: 12 }}>Timing varies by market and change. We review visibility and inquiry trends alongside <a href="https://support.google.com/business/answer/7091">Google’s guide to local ranking</a>.</p>
             </div>
             <div className="card cardSoft">
               <h3 className="h3" style={{ fontSize: 20 }}>Does my site need to be new?</h3>
@@ -129,30 +130,7 @@ export default function LocalSEOPage() {
         </div>
       </section>
 
-      <FreeEvaluationCTA
-        eyebrow="Free website evaluation"
-        title="Not sure if local SEO is right for you?"
-        text="Book a free evaluation and I'll tell you how visible you currently are on Google Maps, what's working, and what quick wins are available to get more local customers."
-      />
-
-      <section className="section sectionBorder">
-        <div className="container grid2">
-          <div className="card">
-            <h2 className="h2">Local search is competitive</h2>
-            <p className="muted">The businesses that show up on Google Maps and local search get most of the customers. The rest get forgotten. If you want to compete in your area, local SEO is essential.</p>
-          </div>
-
-          <div className="card panelHighlight">
-            <p className="eyebrow">Ready to rank locally</p>
-            <h2 className="h2">Ready to get found by local customers?</h2>
-            <p className="muted">Book a call and we will talk about your current visibility, where you can rank, and what the fastest path looks like.</p>
-            <div className="btnRow">
-              <Link className="btnPrimary" href="/contact">Book a strategy call</Link>
-              <Link className="btnGhost" href="/services">See all services</Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FreeEvaluationCTA />
     </main>
   );
 }

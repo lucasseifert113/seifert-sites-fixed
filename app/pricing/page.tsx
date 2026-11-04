@@ -1,25 +1,23 @@
+import { site } from "../lib/site";
 import type { Metadata } from "next";
 import Link from "next/link";
 import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
-import PricingJsonLd from "../components/PricingJsonLd";
 
 export const metadata: Metadata = {
   title: "Pricing | Web Design, Marketing & SEO",
   description:
-    "Web design starting at $250/page. Local SEO, Google Ads, social media, brand identity, and website audits. Clear pricing for local businesses.",
+    "Web design packages. Local SEO, Google Ads, social media, brand identity, and website audits. Clear pricing for local businesses.",
   alternates: { canonical: "https://www.seifertsites.com/pricing" },
 };
 
 const tiers = [
   {
     name: "Starter",
-    price: "$250 to $850",
-    monthly: "$50/month",
+    price: site.pricing.starter,
+    monthly: site.pricing.monthly + " maintenance",
     blurb: "For simple offers that need a clean one-page site and a clear call to action.",
     features: [
       "1 to 3 pages",
-      "$250 per page development fee",
-      "$50/month for updates",
       "Mobile-first design",
       "Clean CTA flow",
       "Basic SEO structure",
@@ -30,30 +28,26 @@ const tiers = [
   },
   {
     name: "Growth",
-    price: "$850 to $1,250",
-    monthly: "$50/month",
+    price: site.pricing.growth,
+    monthly: site.pricing.monthly + " maintenance",
     blurb: "For businesses that need a real multi-page site that looks established and converts better.",
     features: [
       "4 to 6 pages",
-      "$200 per page development fee",
-      "$50/month for updates",
       "Premium design direction",
       "Conversion-first layout",
       "SEO-ready build",
       "Analytics setup",
     ],
-    note: "Best fit for most local businesses.",
+    note: "For businesses with several distinct services.",
     highlight: true,
   },
   {
     name: "Premium",
-    price: "$1,275+",
-    monthly: "$50/month",
+    price: site.pricing.premium,
+    monthly: site.pricing.monthly + " maintenance",
     blurb: "For brands that want more pages, more custom sections, and a stronger custom feel.",
     features: [
       "7+ pages",
-      "$175 per page development fee",
-      "$50/month for updates",
       "More custom sections",
       "Copy cleanup",
       "Priority turnaround",
@@ -67,16 +61,15 @@ const tiers = [
 export default function PricingPage() {
   return (
     <main>
-      <PricingJsonLd />
+
       <section className="hero">
         <div className="container">
-          <p className="eyebrow">Pricing · Seifert Sites</p>
+          <p className="eyebrow">Pricing · Seifert Sites LLC</p>
           <h1 className="h1">
             Simple pricing. <span className="accent">No guessing</span>.
           </h1>
           <p className="lead">
-            Development starts at $250 per page. Ongoing updates are $50 per month.
-            Final cost depends mostly on page count and scope.
+            Prices cover the project. Page count, integrations, and content needs determine your quote within each range. Maintenance is priced separately.
           </p>
         </div>
       </section>
@@ -89,14 +82,7 @@ export default function PricingPage() {
               className={`card ${tier.highlight ? "panelHighlight" : ""}`}
               style={{ position: "relative", overflow: "hidden" }}
             >
-              {tier.highlight && (
-                <div
-                  style={{ position: "absolute", top: 18, right: 18 }}
-                  className="badge"
-                >
-                  Most popular
-                </div>
-              )}
+
 
               <h2 className="h3" style={{ fontSize: 28 }}>
                 {tier.name}
@@ -121,9 +107,7 @@ export default function PricingPage() {
                 <Link
                   className={tier.highlight ? "btnPrimary" : "btnGhost"}
                   href="/contact"
-                >
-                  Get a quote
-                </Link>
+                >Request a free website evaluation</Link>
               </div>
 
               <p className="mutedSmall" style={{ marginTop: 12 }}>
@@ -143,14 +127,14 @@ export default function PricingPage() {
           </div>
           <div className="grid3">
             {[
-              { title: "Google Business Profile", price: "$200", note: "One-time setup", text: "Full profile optimization, photos, categories, review strategy, and post scheduling." },
-              { title: "Website Audit", price: "Free", note: "No strings attached", text: "Detailed report covering performance, SEO, UX, and conversion issues with a clear action plan." },
-              { title: "Logo & Brand Identity", price: "$400 to $600", note: "One-time", text: "Logo design, color palette, typography, and a brand guidelines document." },
-              { title: "Local SEO + Google Business Profile", price: "$175/mo", note: "Monthly retainer", text: "Google Business Profile optimization, local citation building, keyword targeting for your city, and monthly ranking report." },
-              { title: "Google & Meta Ads", price: "$400/mo", note: "+ ad spend", text: "Campaign setup, audience targeting, ad creative, and performance tracking." },
-              { title: "Social Media Management", price: "$250/mo", note: "Monthly retainer", text: "3 posts/week on Instagram and Facebook, caption writing in your brand voice, hashtag research, and monthly performance report." },
-              { title: "Full Marketing Retainer", price: "$500/mo", note: "Best value", text: "Social media management plus local SEO, monthly email newsletter, strategy call, and priority support. Everything in one package." },
-              { title: "Monthly Maintenance", price: "$50/mo", note: "Monthly", text: "Hosting, backups, security updates, small content edits, and uptime monitoring." },
+              { title: "Google Business Profile", price: site.pricing.profile, note: "One-time setup", text: "Full profile optimization, photos, categories, review strategy, and post scheduling." },
+              { title: "Website Audit", price: "Free", note: "No strings attached", text: "One page or planned offer, with up to three recommendations by email." },
+              { title: "Logo & Brand Identity", price: site.pricing.brand, note: "One-time", text: "Logo design, color palette, typography, and a brand guidelines document." },
+              { title: "Local SEO + Google Business Profile", price: site.pricing.seo, note: "Monthly retainer", text: "Google Business Profile optimization, local citation building, keyword targeting for your city, and monthly ranking report." },
+              { title: "Google & Meta Ads", price: site.pricing.ads, note: "+ ad spend", text: "Campaign setup, audience targeting, ad creative, and performance tracking." },
+              { title: "Social Media Management", price: site.pricing.social, note: "Monthly retainer", text: "3 posts/week on Instagram and Facebook, caption writing in your brand voice, hashtag research, and monthly performance report." },
+              { title: "Full Marketing Retainer", price: site.pricing.marketing, note: "Monthly retainer", text: "Social media management plus local SEO, monthly email newsletter, strategy call, and priority support. Everything in one package." },
+              { title: "Monthly Maintenance", price: site.pricing.monthly, note: "Monthly", text: "Hosting, backups, security updates, small content edits, and uptime monitoring." },
             ].map((service) => (
               <div key={service.title} className="card cardSoft">
                 <h3 className="h3" style={{ fontSize: 22 }}>{service.title}</h3>
@@ -168,10 +152,10 @@ export default function PricingPage() {
           {[
             {
               title: "How does pricing work?",
-              text: "Development ranges from $175 to $250 per page depending on the plan. Starter is $250/page, Growth is $200/page, and Premium is $175/page.",
+              text: "We agree on a project price for the pages, features, and content you need before work begins.",
             },
             {
-              title: "What does the $50/month include?",
+              title: "What does maintenance include?",
               text: "Ongoing updates, small content changes, and keeping the site current without you having to touch it.",
             },
             {
@@ -195,28 +179,7 @@ export default function PricingPage() {
         </div>
       </section>
 
-      <FreeEvaluationCTA
-        eyebrow="Free website evaluation"
-        title="Not ready for a quote yet? Start with a free evaluation."
-        text="If you want honest feedback before spending money, book a free website evaluation and I’ll tell you what your site needs first."
-      />
-
-      <section className="section sectionBorder">
-        <div className="container">
-          <div className="card panelHighlight" style={{ textAlign: "center" }}>
-            <p className="eyebrow">Get exact pricing</p>
-            <h2 className="h2">Tell me how many pages you need and I’ll scope it fast.</h2>
-            <p className="lead" style={{ margin: "0 auto" }}>
-              If you know your page count, goals, and deadline, that is enough to get a clear quote.
-            </p>
-            <div className="btnRow" style={{ justifyContent: "center" }}>
-              <Link className="btnPrimary" href="/contact">
-                Book a strategy call
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FreeEvaluationCTA />
     </main>
   );
 }

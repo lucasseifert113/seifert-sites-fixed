@@ -1,3 +1,4 @@
+import { site } from "@/app/lib/site";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -42,13 +43,13 @@ export default function Post() {
               <p className="muted" style={{ marginBottom: 24 }}>You review the site. Tell me what works and what does not. I make revisions until you are happy with it. Most projects need one or two rounds.</p>
 
               <h2 className="h2">Step 5: Launch</h2>
-              <p className="muted" style={{ marginBottom: 24 }}>We push the site live, set up analytics, make sure everything works on mobile, and hand it off. I also offer $50/month ongoing support for updates and changes.</p>
+              <p className="muted" style={{ marginBottom: 24 }}>We push the site live, set up analytics, make sure everything works on mobile, and hand it off. I also offer {site.pricing.monthly} ongoing support for updates and changes.</p>
 
               <h2 className="h2">How long does it take?</h2>
               <p className="muted" style={{ marginBottom: 32 }}>Most projects launch within one to two weeks. The biggest bottleneck is usually content and approvals from the client, not the build itself. If you come prepared, it goes fast.</p>
 
               <div className="btnRow">
-                <Link className="btnPrimary" href="/contact">Start your project</Link>
+                <Link className="btnPrimary" href="/contact">Request a free website evaluation</Link>
                 <Link className="btnGhost" href="/blog">Back to blog</Link>
               </div>
             </div>

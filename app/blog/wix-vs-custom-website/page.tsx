@@ -85,9 +85,7 @@ export default function Post() {
                 thing: make your specific offer clear and easy to act on.
               </p>
               <p className="muted" style={{ marginBottom: 24 }}>
-                Performance is better. A clean, modern build on a proper stack loads in under
-                a second on most devices. That affects both rankings and how visitors feel
-                about the business.
+                Measure the pages your customers actually visit. Images, scripts, hosting, and device conditions can affect performance on either platform.
               </p>
               <p className="muted" style={{ marginBottom: 32 }}>
                 You also own it. No monthly subscription to a platform. No sudden price
@@ -118,9 +116,7 @@ export default function Post() {
               <div className="inlineDivider" style={{ margin: "40px 0" }} />
 
               <div className="btnRow">
-                <Link className="btnPrimary" href="/contact">
-                  Get a free evaluation
-                </Link>
+                <Link className="btnPrimary" href="/contact">Request a free website evaluation</Link>
                 <Link className="btnGhost" href="/pricing">
                   See pricing
                 </Link>

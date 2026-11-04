@@ -5,7 +5,7 @@ import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 export const metadata: Metadata = {
   title: "Illinois Web Design for Small Businesses",
   description:
-    "Professional web design for Illinois small businesses. Seifert Sites builds clean, modern websites for businesses in Galena, Freeport, Dixon, and northern Illinois.",
+    "Professional web design for Illinois small businesses. Seifert Sites LLC builds clean, modern websites for businesses in Galena, Freeport, Dixon, and northern Illinois.",
   alternates: { canonical: "https://www.seifertsites.com/web-design-illinois" },
 };
 
@@ -40,9 +40,7 @@ export default function IllinoisWebDesign() {
             is not working for you, I can help.
           </p>
           <div className="btnRow">
-            <Link className="btnPrimary" href="/contact">
-              Get a free evaluation
-            </Link>
+            <Link className="btnPrimary" href="/contact">Request a free website evaluation</Link>
             <Link className="btnGhost" href="/work">
               See the work
             </Link>
@@ -114,8 +112,7 @@ export default function IllinoisWebDesign() {
             <p className="eyebrow">Pricing</p>
             <h2 className="h2">Straightforward pricing</h2>
             <p className="muted">
-              Development ranges from $175 to $250 per page depending on the plan. Ongoing
-              updates are $50 per month. No surprises, no scope creep.
+              Projects are quoted by scope. See the <Link href="/pricing">website packages and maintenance rate</Link>.
             </p>
           </div>
           <div className="btnRow">
@@ -129,11 +126,7 @@ export default function IllinoisWebDesign() {
         </div>
       </section>
 
-      <FreeEvaluationCTA
-        eyebrow="Free evaluation"
-        title="Northern Illinois business? Get a free look at your site."
-        text="Book a free website evaluation and I will tell you what your site needs, what is hurting conversions, and what I would fix first. No pitch, just honesty."
-      />
+      <FreeEvaluationCTA />
     </main>
   );
 }

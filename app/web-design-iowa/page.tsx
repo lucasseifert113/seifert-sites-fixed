@@ -5,7 +5,7 @@ import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 export const metadata: Metadata = {
   title: "Iowa Web Design for Small Businesses",
   description:
-    "Professional web design for Iowa small businesses. Seifert Sites builds clean, modern websites for businesses in Dubuque, Decorah, and eastern Iowa.",
+    "Professional web design for Iowa small businesses. Seifert Sites LLC builds clean, modern websites for businesses in Dubuque, Decorah, and eastern Iowa.",
   alternates: { canonical: "https://www.seifertsites.com/web-design-iowa" },
 };
 
@@ -40,9 +40,7 @@ export default function IowaWebDesign() {
             business is actually worth, I can fix that.
           </p>
           <div className="btnRow">
-            <Link className="btnPrimary" href="/contact">
-              Get a free evaluation
-            </Link>
+            <Link className="btnPrimary" href="/contact">Request a free website evaluation</Link>
             <Link className="btnGhost" href="/work">
               See the work
             </Link>
@@ -114,8 +112,7 @@ export default function IowaWebDesign() {
             <p className="eyebrow">Pricing</p>
             <h2 className="h2">Honest pricing for Iowa small businesses</h2>
             <p className="muted">
-              Development ranges from $175 to $250 per page depending on the plan. Ongoing
-              updates are $50 per month. You know the cost before we start.
+              Projects are quoted by scope. See the <Link href="/pricing">website packages and maintenance rate</Link>.
             </p>
           </div>
           <div className="btnRow">
@@ -129,11 +126,7 @@ export default function IowaWebDesign() {
         </div>
       </section>
 
-      <FreeEvaluationCTA
-        eyebrow="Free evaluation"
-        title="Iowa business? Get an honest look at your site for free."
-        text="Book a free website evaluation and I will tell you what your site needs, what is holding you back, and what I would fix first. No pressure."
-      />
+      <FreeEvaluationCTA />
     </main>
   );
 }

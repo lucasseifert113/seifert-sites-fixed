@@ -65,8 +65,8 @@ const serviceCategories = [
       },
       {
         title: "Website Audits",
-        text: "Detailed analysis of performance, SEO, UX, and conversions with a clear action plan.",
-        bullets: ["Performance review", "SEO analysis", "UX feedback", "Conversion improvements"],
+        text: "A free review of one page or planned offer.",
+        bullets: ["One visitor goal", "Up to three recommendations", "Delivered by email"],
       },
       {
         title: "Logo & Brand Identity",
@@ -95,7 +95,7 @@ const serviceCategories = [
       },
       {
         title: "Local SEO + Google Business Profile",
-        text: "Complete optimization so you rank higher in Google search and Maps for customers in your area.",
+        text: "Help customers find accurate service and location details on Google Search and Maps.",
         bullets: ["Google Business Profile optimization", "Local citation building", "Keyword targeting for your city", "Monthly ranking report"],
       },
       {
@@ -112,7 +112,7 @@ export default function ServicesPage() {
     <main>
       <section className="hero">
         <div className="container">
-          <p className="eyebrow">Services · Seifert Sites</p>
+          <p className="eyebrow">Services · Seifert Sites LLC</p>
           <h1 className="h1">
             Build, market, and <span className="accent">grow your business online</span>.
           </h1>
@@ -146,34 +146,7 @@ export default function ServicesPage() {
         </section>
       ))}
 
-      <FreeEvaluationCTA
-        eyebrow="Free website evaluation"
-        title="Not sure what service you actually need?"
-        text="Start with a free website evaluation. I’ll tell you what’s weak, what matters, and whether you need a redesign, cleanup, or a full rebuild."
-      />
-
-      <section className="section sectionBorder">
-        <div className="container grid2">
-          <div className="card">
-            <p className="eyebrow">What you can expect</p>
-            <h2 className="h2">Clean communication. Fast execution.</h2>
-            <p className="muted">
-              You will get direct feedback, clear next steps, and a project that moves forward without
-              weeks of drift.
-            </p>
-          </div>
-
-          <div className="card panelHighlight">
-            <p className="eyebrow">Ready to start</p>
-            <h2 className="h2">Need a site that feels more premium?</h2>
-            <p className="muted">Book a call and I will tell you the fastest path to a better site.</p>
-            <div className="btnRow">
-              <Link className="btnPrimary" href="/contact">Book a strategy call</Link>
-              <Link className="btnGhost" href="/pricing">See pricing</Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FreeEvaluationCTA />
     </main>
   );
 }

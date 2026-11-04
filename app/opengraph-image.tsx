@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Seifert Sites - Premium websites for local businesses";
+export const alt = "Seifert Sites LLC - Premium websites for local businesses";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -38,7 +38,7 @@ export default async function Image() {
               lineHeight: 1.1,
             }}
           >
-            Seifert Sites
+            Seifert Sites LLC
           </div>
           <div
             style={{

@@ -22,7 +22,7 @@ export default function Nav() {
       <div className="container navContainer">
         <Link href="/" className="navLogo" onClick={() => setOpen(false)}>
           <div className="navLogoIcon">
-            <Image src="/logo.png" alt="Seifert Sites" width={28} height={28} />
+            <Image src="/logo.png" alt="Seifert Sites LLC" width={28} height={28} />
           </div>
           <div style={{ display: "grid", gap: 2 }}>
             <span style={{ fontWeight: 700 }}>{site.name}</span>

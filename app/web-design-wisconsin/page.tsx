@@ -5,7 +5,7 @@ import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 export const metadata: Metadata = {
   title: "Wisconsin Web Design for Small Businesses",
   description:
-    "Small business web design across Wisconsin. Seifert Sites builds clean, modern websites for WI businesses in Platteville, Dodgeville, Baraboo, and beyond.",
+    "Small business web design across Wisconsin. Seifert Sites LLC builds clean, modern websites for WI businesses in Platteville, Dodgeville, Baraboo, and beyond.",
   alternates: { canonical: "https://www.seifertsites.com/web-design-wisconsin" },
 };
 
@@ -40,9 +40,7 @@ export default function WisconsinWebDesign() {
             credible, loads fast, and actually brings in customers.
           </p>
           <div className="btnRow">
-            <Link className="btnPrimary" href="/contact">
-              Get a free evaluation
-            </Link>
+            <Link className="btnPrimary" href="/contact">Request a free website evaluation</Link>
             <Link className="btnGhost" href="/work">
               See the work
             </Link>
@@ -113,8 +111,7 @@ export default function WisconsinWebDesign() {
             <p className="eyebrow">Pricing</p>
             <h2 className="h2">Simple Wisconsin web design pricing</h2>
             <p className="muted">
-              Development ranges from $175 to $250 per page depending on the plan. Ongoing
-              updates are $50 per month. Most small businesses fit the Growth plan.
+              Projects are quoted by scope. See the <Link href="/pricing">website packages and maintenance rate</Link>.
             </p>
           </div>
           <div className="btnRow">
@@ -128,11 +125,7 @@ export default function WisconsinWebDesign() {
         </div>
       </section>
 
-      <FreeEvaluationCTA
-        eyebrow="Free evaluation"
-        title="Wisconsin small business? Let me look at your site for free."
-        text="Book a free website evaluation and I will tell you what your site needs, what is hurting you, and what I would fix first. No pitch, just honest feedback."
-      />
+      <FreeEvaluationCTA />
     </main>
   );
 }

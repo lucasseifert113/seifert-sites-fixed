@@ -5,7 +5,7 @@ import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
 export const metadata: Metadata = {
   title: "Web Design in Platteville, WI",
   description:
-    "Professional web design for Platteville businesses. Seifert Sites builds clean, modern websites for local businesses in Platteville, WI and the surrounding area.",
+    "Professional web design for Platteville businesses. Seifert Sites LLC builds clean, modern websites for local businesses in Platteville, WI and the surrounding area.",
   alternates: { canonical: "https://www.seifertsites.com/web-design-platteville-wi" },
 };
 
@@ -24,9 +24,7 @@ export default function PlattevilleWebDesign() {
             credible and convert.
           </p>
           <div className="btnRow">
-            <Link className="btnPrimary" href="/contact">
-              Get a free evaluation
-            </Link>
+            <Link className="btnPrimary" href="/contact">Request a free website evaluation</Link>
             <Link className="btnGhost" href="/work">
               See the work
             </Link>
@@ -135,26 +133,19 @@ export default function PlattevilleWebDesign() {
             <p className="eyebrow">Pricing</p>
             <h2 className="h2">Clear pricing. No surprises.</h2>
             <p className="muted">
-              Development ranges from $175 to $250 per page depending on the plan. Ongoing
-              updates are $50 per month. Most local businesses fit the Growth plan.
+              Projects are quoted by scope. See the <Link href="/pricing">website packages and maintenance rate</Link>.
             </p>
           </div>
           <div className="btnRow">
             <Link className="btnPrimary" href="/pricing">
               See full pricing
             </Link>
-            <Link className="btnGhost" href="/contact">
-              Get a quote
-            </Link>
+            <Link className="btnGhost" href="/contact">Request a free website evaluation</Link>
           </div>
         </div>
       </section>
 
-      <FreeEvaluationCTA
-        eyebrow="Free evaluation"
-        title="Not sure what your Platteville business needs online? Start here."
-        text="Book a free website evaluation and I will tell you exactly what your site needs, what to fix first, and what it would cost. No pressure, no pitch."
-      />
+      <FreeEvaluationCTA />
     </main>
   );
 }

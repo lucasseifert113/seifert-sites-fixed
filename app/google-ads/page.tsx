@@ -1,3 +1,4 @@
+import { site } from "@/app/lib/site";
 import type { Metadata } from "next";
 import Link from "next/link";
 import FreeEvaluationCTA from "../components/FreeEvaluationCTA";
@@ -14,7 +15,7 @@ export default function GoogleAdsPage() {
     <main>
       <section className="hero">
         <div className="container">
-          <p className="eyebrow">Google & Meta Ads · Seifert Sites</p>
+          <p className="eyebrow">Google & Meta Ads · Seifert Sites LLC</p>
           <h1 className="h1">
             Put your offer in front of <span className="accent">customers ready to buy</span>.
           </h1>
@@ -78,7 +79,7 @@ export default function GoogleAdsPage() {
         <div className="container">
           <div style={{ maxWidth: 760, marginBottom: 28 }}>
             <p className="eyebrow">Pricing</p>
-            <h2 className="h2">$400 per month management fee</h2>
+            <h2 className="h2">{site.pricing.ads} management fee</h2>
             <p className="lead">Plus your ad spend. You control the budget.</p>
           </div>
           <div className="grid2">
@@ -93,7 +94,7 @@ export default function GoogleAdsPage() {
                 <li>Weekly performance reports</li>
               </ul>
               <div className="btnRow" style={{ marginTop: 20 }}>
-                <Link className="btnPrimary" href="/contact">Get started</Link>
+                <Link className="btnPrimary" href="/contact">Request a free website evaluation</Link>
                 <Link className="btnGhost" href="/pricing">See all pricing</Link>
               </div>
             </div>
@@ -115,7 +116,7 @@ export default function GoogleAdsPage() {
           <div className="grid2">
             <div className="card cardSoft">
               <h3 className="h3" style={{ fontSize: 20 }}>How much will ads cost me?</h3>
-              <p className="muted" style={{ marginTop: 12 }}>Ad spend varies by industry. A dentist might spend $1,000/month while a local service might spend $500. The management fee is $400/month. You set the total budget that works for you.</p>
+              <p className="muted" style={{ marginTop: 12 }}>Ad spend varies by industry. A dentist might spend $1,000/month while a local service might spend $500. The management fee is {site.pricing.ads}. You set the total budget that works for you.</p>
             </div>
             <div className="card cardSoft">
               <h3 className="h3" style={{ fontSize: 20 }}>How long until I see results?</h3>
@@ -127,36 +128,13 @@ export default function GoogleAdsPage() {
             </div>
             <div className="card cardSoft">
               <h3 className="h3" style={{ fontSize: 20 }}>What's a good return on ad spend?</h3>
-              <p className="muted" style={{ marginTop: 12 }}>Depends on your industry. Service businesses often aim for 3x to 5x return. A $1,000 ad spend should generate $3,000 to $5,000 in revenue.</p>
+              <p className="muted" style={{ marginTop: 12 }}>Compare qualified inquiries and attributable sales with your ad spend and management fee. Results depend on the offer, audience, and follow-up.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <FreeEvaluationCTA
-        eyebrow="Free strategy call"
-        title="Not sure if paid ads make sense for your business?"
-        text="Book a call and I will tell you whether Google or Facebook ads are the right fit, what budget to start with, and what realistic returns look like for your industry."
-      />
-
-      <section className="section sectionBorder">
-        <div className="container grid2">
-          <div className="card">
-            <h2 className="h2">Paid ads work when they're done right</h2>
-            <p className="muted">Bad ads waste money. Good ads get leads. The difference is strategy, targeting, copywriting, and constant optimization. I handle all of it so you don't have to think about it.</p>
-          </div>
-
-          <div className="card panelHighlight">
-            <p className="eyebrow">Ready for fast results</p>
-            <h2 className="h2">Ready to get qualified leads and sales?</h2>
-            <p className="muted">Book a call and we will talk about your goals, budget, and what the next 30 days could look like.</p>
-            <div className="btnRow">
-              <Link className="btnPrimary" href="/contact">Book a strategy call</Link>
-              <Link className="btnGhost" href="/services">See all services</Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FreeEvaluationCTA />
     </main>
   );
 }

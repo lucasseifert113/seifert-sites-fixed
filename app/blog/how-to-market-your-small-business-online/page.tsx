@@ -53,33 +53,33 @@ export default function Post() {
 
             <p>If you do nothing else on this list, do this. Google Business Profile (formerly Google My Business) is the free listing that shows up when someone searches for your type of business in your area.</p>
 
-            <p>When someone Googles "hair salon Cuba City" or "auto repair Platteville," the businesses that show up in that map section are Google Business Profile listings. If you're not there, you're invisible to anyone searching locally.</p>
+            <p>When someone Googles "hair salon Cuba City" or "auto repair Platteville," the businesses that show up in that map section are Google Business Profile listings.</p>
 
             <p>Here's how to set it up:</p>
             <ul>
               <li>Go to business.google.com and claim your listing</li>
               <li>Add your hours, phone number, address, and photos</li>
               <li>Write a short description of what you do</li>
-              <li>Ask every happy customer to leave a review</li>
+              <li>Invite customers to leave a review</li>
             </ul>
 
-            <p>Reviews are the single biggest factor in local search ranking. Ten genuine reviews will do more for your visibility than almost anything else.</p>
+            <p>Google describes relevance, distance, and prominence as local ranking factors. Reviews can contribute to prominence. See <a href="https://support.google.com/business/answer/7091">Google’s local ranking guidance</a>.</p>
 
             <h2 className="h2">2. Have a Website That Actually Works</h2>
 
-            <p>A Facebook page is not a website. It's a good supplement, but it's not something you own and it doesn't rank well in Google search for your specific services.</p>
+            <p>A Facebook page is not a website. It's a good supplement, but it's not something you own.</p>
 
             <p>Your website needs to do three things: tell people what you do, make it easy to contact you or book, and show up when people search for your services.</p>
 
             <p>The biggest mistakes small businesses make with their websites:</p>
             <ul>
               <li>No clear call to action (what do you want visitors to do?)</li>
-              <li>Not mobile-friendly (over 70% of local searches happen on phones)</li>
-              <li>No mention of the city or town they serve (Google needs this to rank you locally)</li>
+              <li>Not mobile-friendly</li>
+              <li>No mention of the city or town they serve</li>
               <li>Slow load times that cause people to leave before the page opens</li>
             </ul>
 
-            <p>A well-built website that loads fast, works on mobile, and mentions your location will outrank a fancy site that ignores these basics every time.</p>
+            <p>Test whether a visitor on a phone can find your service area and contact your business.</p>
 
             <h2 className="h2">3. Get on Social Media -- But Do It Right</h2>
 
@@ -101,7 +101,7 @@ export default function Post() {
 
             <p>After every completed job or appointment, say: "If you enjoyed your experience, would you mind leaving us a Google review? It really helps us out." Then send a follow-up text with the direct link.</p>
 
-            <p>A business with 40 reviews will consistently outrank a competitor with 5, even if the competitor has been around longer. Reviews are trust signals that Google takes seriously.</p>
+            <p>Reviews help prospective customers understand what working with you is like.</p>
 
             <h2 className="h2">5. Get Listed in Local Directories</h2>
 
@@ -114,7 +114,7 @@ export default function Post() {
               <li>Your local Chamber of Commerce directory</li>
             </ul>
 
-            <p>Make sure your business name, address, and phone number are exactly the same across all of them. Inconsistencies confuse Google and hurt your ranking.</p>
+            <p>Make sure your business name, address, and phone number are exactly the same across all of them. Accurate details help customers reach the right location.</p>
 
             <h2 className="h2">6. Use Email -- Even a Simple List</h2>
 
@@ -138,13 +138,13 @@ export default function Post() {
 
             <p>Start with one thing. Get your Google Business Profile set up if it isn't already. Then build from there.</p>
 
-            <p>If you want help getting your business found online, that's exactly what we do at Seifert Sites. <Link href="/contact">Reach out for a free evaluation</Link> and we'll tell you exactly what's holding you back.</p>
+            <p>If you want help getting your business found online, that's exactly what we do at Seifert Sites LLC. <Link href="/contact">Request a free website evaluation</Link> and we'll tell you exactly what's holding you back.</p>
 
             <div style={{ marginTop: 48, padding: "32px", background: "rgba(255,255,255,0.04)", borderRadius: 12, border: "1px solid rgba(255,255,255,0.08)" }}>
               <p className="eyebrow" style={{ marginBottom: 8 }}>Free Website Evaluation</p>
               <h3 className="h3" style={{ marginBottom: 12 }}>Not sure where your business stands online?</h3>
               <p style={{ marginBottom: 20, color: "rgba(255,255,255,0.6)" }}>We'll review your website, Google presence, and local search visibility for free -- no strings attached.</p>
-              <Link href="/contact" className="btnPrimary">Get your free evaluation</Link>
+              <Link href="/contact" className="btnPrimary">Request a free website evaluation</Link>
             </div>
 
           </div>

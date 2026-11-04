@@ -6,7 +6,7 @@ import { recentProjects } from "../lib/recent-projects";
 export const metadata: Metadata = {
   title: "Our Work | Websites Built for Real Businesses",
   description:
-    "See websites Seifert Sites has built for local businesses, coaches, and brands. Real projects, real results.",
+    "See websites Seifert Sites LLC has built for local businesses, coaches, and brands. Real projects, real results.",
   alternates: { canonical: "https://www.seifertsites.com/work" },
 };
 
@@ -72,11 +72,7 @@ export default function WorkPage() {
         </div>
       </section>
 
-      <FreeEvaluationCTA
-        eyebrow="Free website evaluation"
-        title="Like the direction? Get a free evaluation of your own site."
-        text="If your current site feels outdated, weak, or unclear, I’ll review it and tell you what I’d fix first."
-      />
+      <FreeEvaluationCTA />
     </main>
   );
 }

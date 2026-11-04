@@ -5,7 +5,7 @@ import FreeEvaluationCTA from "../../components/FreeEvaluationCTA";
 export const metadata: Metadata = {
   title: "Rebel Training Case Study | Wrestling Gym Website",
   description:
-    "How Seifert Sites built a complete website for Rebel Training, a wrestling and strength gym. Programs, pricing, coach profiles, scheduling, and membership integration.",
+    "How Seifert Sites LLC built a complete website for Rebel Training, a wrestling and strength gym. Programs, pricing, coach profiles, scheduling, and membership integration.",
   alternates: { canonical: "https://www.seifertsites.com/work/rebel-training" },
 };
 
@@ -85,9 +85,7 @@ export default function RebelTrainingCaseStudy() {
             >
               View live site
             </a>
-            <Link className="btnGhost" href="/contact">
-              Start your project
-            </Link>
+            <Link className="btnGhost" href="/contact">Request a free website evaluation</Link>
           </div>
         </div>
       </section>
@@ -199,11 +197,7 @@ export default function RebelTrainingCaseStudy() {
         </div>
       </section>
 
-      <FreeEvaluationCTA
-        eyebrow="Your turn"
-        title="Running a gym, studio, or training program with no real website?"
-        text="Book a free evaluation and I will tell you exactly what your online presence needs. No pressure, no pitch."
-      />
+      <FreeEvaluationCTA />
     </main>
   );
 }

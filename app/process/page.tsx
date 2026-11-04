@@ -37,7 +37,7 @@ export default function ProcessPage() {
     <main>
       <section className="hero">
         <div className="container">
-          <p className="eyebrow">Process · Seifert Sites</p>
+          <p className="eyebrow">Process · Seifert Sites LLC</p>
           <h1 className="h1">
             Simple process. <span className="accent">No wasted motion</span>.
           </h1>
@@ -84,27 +84,7 @@ export default function ProcessPage() {
         </div>
       </section>
 
-      <FreeEvaluationCTA
-        eyebrow="Free website evaluation"
-        title="Want to know what your site actually needs before starting?"
-        text="Book a free website evaluation and I’ll tell you what to fix, what to ignore, and what the fastest path forward looks like."
-      />
-
-      <section className="section sectionBorder">
-        <div className="container">
-          <div className="card panelHighlight" style={{ textAlign: "center" }}>
-            <p className="eyebrow">Next step</p>
-            <h2 className="h2">Need this handled fast and clean?</h2>
-            <p className="lead" style={{ margin: "0 auto" }}>
-              Book a strategy call. I will tell you what to fix, what to ignore, and what the project
-              should look like.
-            </p>
-            <div className="btnRow" style={{ justifyContent: "center" }}>
-              <Link className="btnPrimary" href="/contact">Book a strategy call</Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FreeEvaluationCTA />
     </main>
   );
 }

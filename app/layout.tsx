@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.domain),
   title: {
     default: site.title,
-    template: "%s | Seifert Sites",
+    template: "%s | Seifert Sites LLC",
   },
   description: site.description,
   keywords: [
@@ -38,10 +38,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og.png",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Seifert Sites - Premium websites for local businesses",
+        alt: "Seifert Sites LLC - Premium websites for local businesses",
       },
     ],
   },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: site.title,
     description: site.description,
-    images: ["/og.png"],
+    images: ["/opengraph-image"],
   },
   icons: {
     icon: "/favicon.ico",
