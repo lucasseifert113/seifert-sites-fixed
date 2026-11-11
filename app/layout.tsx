@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Background from "./components/Background";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import MailchimpTracking from "./components/MailchimpTracking";
 import { site } from "./lib/site";
 
 export const metadata: Metadata = {
@@ -80,6 +81,7 @@ export default function RootLayout({
         <Nav />
         <div className="site">{children}</div>
         <Footer />
+        <MailchimpTracking />
       </body>
     </html>
   );
