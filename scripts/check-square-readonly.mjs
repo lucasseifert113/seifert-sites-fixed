@@ -31,6 +31,10 @@ try {
     console.error("SQUARE_CONNECTION_TEST: ERROR_CODES " + (payload.errors || []).map(e=>e.code).filter(Boolean).join(","));
     console.error("SQUARE_CONNECTION_TEST: CONTENT_TYPE " + (response.headers.get("content-type") || "unknown"));
     console.error("SQUARE_CONNECTION_TEST: RESPONSE_KEYS " + Object.keys(payload ?? {}).join(","));
+    if (Array.isArray(payload.locations)) {
+      console.error("SQUARE_CONNECTION_TEST: AVAILABLE_LOCATIONS " + JSON.stringify(payload.locations.map(l=>({id:l.id,status:l.status,capabilities:l.capabilities?.includes("CREDIT_CARD_PROCESSING")}))));
+      console.error("SQUARE_CONNECTION_TEST: CONFIGURED_ID_HAS_WHITESPACE " + (locationId.trim() !== locationId));
+    }
     console.error("SQUARE_CONNECTION_TEST: SQUARE_REQUEST_ID_PRESENT " + Boolean(response.headers.get("x-request-id")));
     process.exit(1);
   }
