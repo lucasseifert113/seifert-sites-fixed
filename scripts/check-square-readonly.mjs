@@ -12,7 +12,7 @@ if (environment !== "production") {
   console.error("SQUARE_CONNECTION_TEST: WRONG_ENVIRONMENT");
   process.exit(1);
 }
-const url = "https://connect.squareup.com/v2/locations/" + encodeURIComponent(locationId);
+const url = "https://connect.squareup.com/v2/locations";
 try {
   const response = await fetch(url, {
     method: "GET",
@@ -24,11 +24,14 @@ try {
     signal: AbortSignal.timeout(15000),
   });
   const payload = await response.json();
-  if (response.ok && payload.location?.id === locationId) {
+  if (response.ok && Array.isArray(payload.locations) && payload.locations.some((l) => l.id === locationId)) {
     console.log("SQUARE_CONNECTION_TEST: PASS (production location accessible, read-only)");
   } else {
     console.error("SQUARE_CONNECTION_TEST: FAIL HTTP " + response.status);
     console.error("SQUARE_CONNECTION_TEST: ERROR_CODES " + (payload.errors || []).map(e=>e.code).filter(Boolean).join(","));
+    console.error("SQUARE_CONNECTION_TEST: CONTENT_TYPE " + (response.headers.get("content-type") || "unknown"));
+    console.error("SQUARE_CONNECTION_TEST: RESPONSE_KEYS " + Object.keys(payload ?? {}).join(","));
+    console.error("SQUARE_CONNECTION_TEST: SQUARE_REQUEST_ID_PRESENT " + Boolean(response.headers.get("x-request-id")));
     process.exit(1);
   }
 } catch (e) {
