@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/check-square-readonly.mjs && next build",
+    "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "square:check": "node scripts/check-square-readonly.mjs"
   },
   "dependencies": {
     "next": "16.1.1",
